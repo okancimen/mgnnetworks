@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reference Letter — Idil Omuris — Magenta Networks</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 10.5pt;
+      color: #1a1a1a;
+      background: #e8e8e8;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      background: #fff;
+      margin: 20mm auto;
+      padding: 12mm 16mm 28mm;
+      position: relative;
+    }
+
+    /* LETTERHEAD */
+    .letterhead {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 3mm;
+    }
+    .lh-left img {
+      height: 28px;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .lh-left .company-name {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #1a1a1a;
+      text-transform: uppercase;
+    }
+    .lh-right {
+      text-align: right;
+      font-family: 'Inter', sans-serif;
+      font-size: 7.5pt;
+      color: #555;
+      line-height: 1.7;
+    }
+    .lh-right .uen {
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    /* ACCENT BAR */
+    .accent-bar {
+      height: 2.5pt;
+      background: #E60CD2;
+      margin-top: -2mm;
+      margin-bottom: 7mm;
+    }
+
+    /* DATE & TO */
+    .meta-block {
+      margin-bottom: 4mm;
+    }
+    .meta-block .date {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      color: #555;
+      margin-bottom: 4mm;
+    }
+    .meta-block .to-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #999;
+      margin-bottom: 1mm;
+    }
+    .meta-block .to-value {
+      font-size: 11pt;
+    }
+
+    /* RE LINE */
+    .re-block {
+      background: #f5f5f7;
+      border-left: 3pt solid #E60CD2;
+      padding: 3mm 4.5mm;
+      margin-bottom: 5mm;
+    }
+    .re-block .re-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #E60CD2;
+      margin-bottom: 1mm;
+    }
+    .re-block .re-value {
+      font-size: 11pt;
+      font-weight: 600;
+    }
+
+    /* BODY */
+    .letter-body p {
+      line-height: 1.65;
+      margin-bottom: 4mm;
+      color: #1a1a1a;
+    }
+
+    /* DELIVERABLES */
+    .deliverables {
+      margin: 4mm 0;
+    }
+    .deliverable-item {
+      margin-bottom: 4mm;
+      padding-left: 4mm;
+      border-left: 1.5pt solid #e0e0e0;
+    }
+    .deliverable-item .d-title {
+      font-weight: 600;
+      font-style: italic;
+    }
+    .deliverable-item p {
+      margin-bottom: 1.5mm;
+    }
+
+    /* SIGNATURE */
+    .signature-block {
+      margin-top: 6mm;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 10mm;
+    }
+    .sig-left { flex: 1; }
+    .sig-closing {
+      margin-bottom: 7mm;
+    }
+    .sig-name {
+      font-family: 'Inter', sans-serif;
+      font-size: 11pt;
+      font-weight: 700;
+      margin-bottom: 1mm;
+    }
+    .sig-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      color: #555;
+      line-height: 1.7;
+    }
+    .sig-qr {
+      flex-shrink: 0;
+      text-align: center;
+    }
+    .sig-qr #qrcode { display: inline-block; }
+    .sig-qr #qrcode canvas,
+    .sig-qr #qrcode img { display: block; }
+    .sig-qr .qr-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 6.5pt;
+      color: #aaa;
+      margin-top: 2mm;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+    .sig-qr .qr-ref {
+      font-family: 'Inter', sans-serif;
+      font-size: 6pt;
+      color: #ccc;
+      margin-top: 1mm;
+      letter-spacing: 0.2px;
+    }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      position: absolute;
+      bottom: 8mm;
+      left: 16mm;
+      right: 16mm;
+      border-top: 0.5pt solid #e0e0e0;
+      padding-top: 3mm;
+      font-family: 'Inter', sans-serif;
+      font-size: 7pt;
+      color: #aaa;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    /* PRINT */
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; box-shadow: none; }
+    }
+    @page { size: A4; margin: 0; }
+    @media screen {
+      .page { box-shadow: 0 4px 40px rgba(0,0,0,0.12); }
+    }
+
+    /* PRINT BUTTON */
+    .print-btn {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      background: #E60CD2;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      cursor: pointer;
+      z-index: 999;
+    }
+    .print-btn:hover { opacity: .85; }
+    @media print { .print-btn { display: none; } }
+  </style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Save as PDF ↓</button>
+
+<div class="page">
+
+  <div class="letterhead">
+    <div class="lh-left">
+      <img src="../logo.png" alt="Magenta Networks" />
+      <div class="company-name">Magenta Networks Pte Ltd</div>
+    </div>
+    <div class="lh-right">
+      100 Tras Street, #16-01AM, 100AM<br />
+      Singapore 079027<br />
+      <span class="uen">UEN: 201540366Z</span><br />
+      www.mgnnetworks.com
+    </div>
+  </div>
+
+  <div class="accent-bar"></div>
+
+  <div class="meta-block">
+    <div class="date">20 June 2026</div>
+    <div class="to-label">To</div>
+    <div class="to-value">To Whom It May Concern</div>
+  </div>
+
+  <div class="re-block">
+    <div class="re-label">RE</div>
+    <div class="re-value">Letter of Reference — Idil Omuris, Global Career Fellowship (Business Management)</div>
+  </div>
+
+  <div class="letter-body">
+
+    <p>I am writing in my capacity as Managing Director of Magenta Networks Pte Ltd to provide this reference for Idil Omuris, who completed a Term Fellowship with our organisation from January to May 2026. Magenta Networks is a Singapore-incorporated venture studio established in 2015; our Global Career Fellowship places students on live project work inside our portfolio companies. Fewer than 30% of applicants are accepted and all deliverables must reach a minimum standard of 7/10 before a reference letter is issued.</p>
+
+    <p><strong>Programme.</strong> Idil joined the Business Management track and worked asynchronously over five months, approximately 8–10 hours per week alongside full-time studies, within an agentic AI-enabled project environment. Deliverables completed:</p>
+
+    <div class="deliverables">
+
+      <div class="deliverable-item">
+        <p><span class="d-title">Competitor Analysis — EdTech Market (Southeast Asia):</span> Idil benchmarked twelve edtech companies across Southeast Asia on pricing, features, and distribution channels. Deliverable was a scored comparison matrix and executive summary with positioning recommendations for Eduentry's expansion.</p>
+      </div>
+
+      <div class="deliverable-item">
+        <p><span class="d-title">Process Documentation — Student Onboarding Workflow:</span> Idil mapped the student onboarding process end to end, identifying five friction points with revised workflow steps and time savings. The updated documentation was reviewed and adopted by the operations team without further revision.</p>
+      </div>
+
+      <div class="deliverable-item">
+        <p><span class="d-title">Market Entry Brief — Indonesia Expansion:</span> Idil produced a market entry brief covering regulatory, competitive, and rollout considerations for Eduentry's potential expansion into Indonesia. The brief was reviewed by the Managing Director and incorporated directly into strategic planning.</p>
+      </div>
+
+    </div>
+
+    <p>Idil demonstrated analytical rigour, clear written communication, and the discipline to work independently to a deadline. All deliverables were submitted on time; the competitor analysis was revised once before final approval. Outputs were reviewed, adopted, and in some cases incorporated directly into strategic planning. I recommend Idil without reservation to any university admissions committee, scholarship programme, or employer seeking evidence of genuine early professional capability.</p>
+
+  </div>
+
+  <div class="signature-block">
+    <div class="sig-left">
+      <p class="sig-closing">Yours sincerely,</p>
+      <div class="sig-name">Okan Cimen</div>
+      <div class="sig-title">
+        Managing Director<br />
+        Magenta Networks Pte Ltd<br />
+        c.o@mgnnetworks.com
+      </div>
+    </div>
+    <div class="sig-qr">
+      <div id="qrcode"></div>
+      <div class="qr-label">Verify authenticity</div>
+      <div class="qr-ref">REF: IO-BIZ-2026-001</div>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    This letter is issued exclusively to Idil Omuris and is specific to work completed and reviewed under the Magenta Networks Global Career Fellowship.
+    It may not be reproduced, altered, or presented as applying to any other individual or programme.
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  new QRCode(document.getElementById('qrcode'), {
+    text: 'https://mgnnetworks.com/verify/?ref=IO-BIZ-2026-001',
+    width: 64,
+    height: 64,
+    colorDark: '#1a1a1a',
+    colorLight: '#ffffff',
+    correctLevel: QRCode.CorrectLevel.M
+  });
+</script>
+</body>
+</html>

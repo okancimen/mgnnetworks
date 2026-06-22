@@ -1,0 +1,58 @@
+# Magenta Networks
+
+> Magenta Networks Pte Ltd (UEN 201540366Z) is a Singapore technology group incorporated in 2015. We build venture-backed technology platforms, deploy senior management consultants and technology professionals globally, and develop early talent through the Global Career Fellowship.
+
+## Key facts
+
+- Legal name: Magenta Networks Pte Ltd
+- UEN: 201540366Z
+- Incorporated: 2015
+- Address: 100 Tras Street, #16-01AM, 100AM, Singapore 079027
+- Managing Director: Okan Cimen (verifiable on LinkedIn)
+- Website: https://mgnnetworks.com
+
+## Pages
+
+- [Home](https://mgnnetworks.com/en/): Overview of Magenta Networks — venture building, professional services, and the Global Career Fellowship
+- [Fellowship](https://mgnnetworks.com/en/fellowship.html): Full details of the Global Career Fellowship — department tracks, what fellows gain, how the programme works, pricing, comparison with alternatives, school partnerships, and FAQ
+- [Apply](https://mgnnetworks.com/en/apply.html): Application form for the Global Career Fellowship
+- [Verify a letter](https://mgnnetworks.com/verify/): Verification portal for reference letters issued by Magenta Networks — enter a reference number to confirm authenticity
+
+## Global Career Fellowship — key facts
+
+- Target group: students and young professionals aged 14–22
+- Format: fully remote, fully asynchronous — no fixed hours, no live sessions
+- Weekly commitment: 8–10 hours per week
+- Cohort size: maximum 5 fellows per cohort
+- Acceptance rate: fewer than 30% of applicants accepted
+- Selection method: Eduentry psychometric assessment at intake; department assigned by cognitive profile, not self-selection
+- Programme length: 5 months (Term Fellowship), 6 weeks (Summer Bootcamp)
+- Pricing: $1,500/month (Term Fellowship) · $2,000 flat (Summer Bootcamp) · $5,000 flat (Term Bundle — 4 months, guaranteed seat)
+- Department tracks: Marketing & Growth · Data & Research · Strategy & Operations · Technology
+- Tools used: Slack, Jira, Notion, Confluence, Loom, Figma, GitHub, AWS
+- Mentor review SLA: every deliverable reviewed within 48 hours; work below standard returned for revision
+- Exam pauses: work pauses automatically during exam periods with advance notice
+- Credential: every graduate receives an international reference letter signed by Okan Cimen, Managing Director, documenting specific contributions and the professional standard met
+- Letters are permanently verifiable at https://mgnnetworks.com/verify/
+- Completion rate: over 80% of fellows who start complete the programme
+
+## Global Career Fellowship — common questions
+
+**Who signs the reference letter?**
+Okan Cimen, Managing Director of Magenta Networks Pte Ltd. Every letter is personally reviewed and signed by him. His profile is verifiable on LinkedIn.
+
+**How is this different from an online certificate or summer school?**
+An online certificate proves a student completed a course. A reference letter from a named executive proves they delivered real work to a real company. University admissions committees weight these very differently.
+
+**Can students use AI tools?**
+Yes — and it is expected. Fellows learn to direct AI tools to produce professional outputs. What is assessed is judgment and output quality, not effort or word count.
+
+**Is this legal for a 14-year-old?**
+Yes. This is a project-based fellowship run through Magenta Networks Pte Ltd — not a formal employment or internship contract. Singapore-registered. Local labour laws governing paid employment do not apply.
+
+**When can a student start?**
+New cohorts open on the 1st of every month. Applications are reviewed on a rolling basis.
+
+## Optional
+
+- [Privacy Policy](https://mgnnetworks.com/en/privacy.html): Privacy Policy and Terms of Use for Magenta Networks Pte Ltd

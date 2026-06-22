@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insights — Magenta Networks</title>
+  <meta name="description" content="Thinking on careers, talent, and technology from Magenta Networks. Practical perspectives for students, parents, and professionals." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mgnnetworks.com/en/insights/" />
+  <link rel="alternate" type="text/plain" title="LLMs.txt" href="https://mgnnetworks.com/llms.txt" />
+  <meta property="og:title" content="Insights — Magenta Networks" />
+  <meta property="og:description" content="Thinking on careers, talent, and technology from Magenta Networks." />
+  <meta property="og:image" content="https://mgnnetworks.com/og-image.png" />
+  <meta property="og:url" content="https://mgnnetworks.com/en/insights/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Magenta Networks" />
+  <style>
+    :root {
+      --ink: #1d1d1f;
+      --sub: #6e6e73;
+      --light-bg: #f5f5f7;
+      --red: #D40E32;
+      --green: #AFFE05;
+      --blue: #0FC5ED;
+      --mag: #E60CD2;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+      background: #fff;
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV — placeholder styles, overridden by components.js injection */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      height: 48px; display: flex; align-items: center;
+      justify-content: space-between; padding: 0 22px;
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .nav-logo-mark { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo-icon { width: 32px; height: 32px; flex-shrink: 0; }
+    .nav-logo-icon img { width: 32px; height: 32px; object-fit: contain; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 12px; font-weight: 400; color: var(--ink); text-decoration: none; opacity: 0.85; }
+    .nav-links a:hover { opacity: 1; }
+    .nav-apply { font-size: 12px; font-weight: 500; color: #0099BB !important; opacity: 1 !important; }
+    .hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 36px; height: 36px; padding: 6px; background: none; border: none; cursor: pointer; z-index: 300; flex-shrink: 0; }
+    .hamburger span { display: block; height: 2px; border-radius: 2px; background: var(--ink); transition: transform .3s, opacity .3s; transform-origin: center; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    #mobile-menu { position: fixed; inset: 0; z-index: 200; background: #000; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; opacity: 0; pointer-events: none; transition: opacity .35s; }
+    #mobile-menu.open { opacity: 1; pointer-events: all; }
+    .mobile-link { display: block; font-size: clamp(28px,8vw,48px); font-weight: 700; letter-spacing: -1.5px; color: rgba(255,255,255,0.85); text-decoration: none; padding: 10px 24px; opacity: 0; transform: translateY(20px); transition: transform .4s, opacity .4s, color .2s; }
+    #mobile-menu.open .mobile-link { transform: none; opacity: 1; }
+    #mobile-menu.open .mobile-link:nth-child(1) { transition-delay: .05s; }
+    #mobile-menu.open .mobile-link:nth-child(2) { transition-delay: .10s; }
+    #mobile-menu.open .mobile-link:nth-child(3) { transition-delay: .15s; }
+    #mobile-menu.open .mobile-link:nth-child(4) { transition-delay: .20s; }
+    #mobile-menu.open .mobile-link:nth-child(5) { transition-delay: .25s; }
+    .mobile-link:hover { color: #fff; }
+    .mobile-link.apply { color: var(--mag); margin-top: 8px; font-size: clamp(20px,5vw,32px); }
+    .mobile-menu-footer { position: absolute; bottom: 40px; font-size: 12px; color: rgba(255,255,255,0.2); letter-spacing: 0.3px; }
+
+    /* HERO */
+    .insights-hero {
+      background: var(--ink);
+      padding: 120px 24px 80px;
+      text-align: center;
+    }
+    .insights-hero .kicker {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.8px;
+      text-transform: uppercase; color: var(--mag); margin-bottom: 16px;
+    }
+    .insights-hero h1 {
+      font-size: clamp(36px, 6vw, 72px); font-weight: 700;
+      letter-spacing: -2.5px; line-height: 1.06; color: #f5f5f7;
+      max-width: 700px; margin: 0 auto 18px;
+    }
+    .insights-hero p {
+      font-size: 17px; color: rgba(255,255,255,0.45);
+      max-width: 460px; margin: 0 auto; line-height: 1.6;
+    }
+
+    /* GRID */
+    .insights-wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+    }
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .insight-card {
+      background: var(--light-bg);
+      border-radius: 16px;
+      padding: 32px 28px;
+      text-decoration: none;
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .insight-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+    .insight-tag {
+      display: inline-block;
+      font-size: 10px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--mag);
+      background: rgba(230,12,210,0.1);
+      border-radius: 980px; padding: 4px 12px;
+      align-self: flex-start;
+    }
+    .insight-card h2 {
+      font-size: 18px; font-weight: 700; letter-spacing: -0.4px;
+      color: var(--ink); line-height: 1.35;
+    }
+    .insight-card p {
+      font-size: 14px; color: var(--sub); line-height: 1.65; flex: 1;
+    }
+    .insight-meta {
+      font-size: 12px; color: rgba(0,0,0,0.3); font-weight: 500;
+      display: flex; gap: 10px; align-items: center;
+    }
+    .insight-read {
+      font-size: 13px; font-weight: 600; color: var(--mag);
+      margin-top: 4px;
+    }
+
+    /* FOOTER */
+    footer { background: var(--ink); border-top: 1px solid rgba(255,255,255,0.08); padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .footer-logo-icon { width: 24px; height: 24px; flex-shrink: 0; }
+    .footer-logo-icon img { width: 24px; height: 24px; object-fit: contain; display: block; }
+    .footer-name { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.6); }
+    .footer-right { font-size: 11px; color: rgba(255,255,255,0.2); }
+
+    @media (max-width: 900px) { .insights-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .insights-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="mgn-nav"></div>
+
+<div class="insights-hero">
+  <div class="kicker">Insights</div>
+  <h1>Thinking on careers,<br />talent &amp; technology.</h1>
+  <p>Practical perspectives for students, parents, schools, and professionals navigating the future of work.</p>
+</div>
+
+<div class="insights-wrap">
+  <div class="insights-grid">
+
+    <a href="10-benefits-of-part-time-work-for-students.html" class="insight-card">
+      <span class="insight-tag">Career</span>
+      <h2>10 Benefits of Part-Time Work for Students in 2026</h2>
+      <p>From time management to faster career progression — the ten most valuable advantages of working part-time as a student, and why starting early compounds.</p>
+      <div class="insight-meta">
+        <span>22 Jun 2026</span>
+        <span>·</span>
+        <span>10 min read</span>
+      </div>
+      <div class="insight-read">Read article →</div>
+    </a>
+
+  </div>
+</div>
+
+<div id="mgn-footer"></div>
+
+<script src="../../shared/components.js"></script>
+</body>
+</html>

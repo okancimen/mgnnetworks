@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Letter Verification — Magenta Networks</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    :root {
+      --ink: #1d1d1f;
+      --sub: #6e6e73;
+      --light-bg: #f5f5f7;
+      --mag: #E60CD2;
+      --green: #1a9e5c;
+      --red: #c0392b;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+      background: var(--light-bg);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: 0 32px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo img { height: 24px; display: block; }
+    .nav-back { font-size: 13px; color: var(--sub); text-decoration: none; }
+    .nav-back:hover { color: var(--ink); }
+    .lang-switch { display: flex; gap: 2px; }
+    .ls-item { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; color: #999; text-decoration: none; padding: 4px 7px; border-radius: 5px; }
+    .ls-item:hover { color: var(--ink); background: var(--light-bg); }
+    .ls-item.ls-active { color: var(--ink); background: var(--light-bg); }
+
+    /* MAIN */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+      padding-top: calc(56px + 48px);
+    }
+
+    .verify-card {
+      background: #fff;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 560px;
+      overflow: hidden;
+      box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+    }
+
+    /* STATUS BANNER */
+    .status-banner {
+      padding: 28px 32px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .status-banner.verified   { background: #eafaf2; }
+    .status-banner.not-found  { background: #fdf0ef; }
+    .status-banner.loading    { background: var(--light-bg); }
+
+    .status-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .verified  .status-icon { background: #d0f2e3; }
+    .not-found .status-icon { background: #fbd9d7; }
+    .loading   .status-icon { background: #e8e8ea; }
+
+    .status-text h2 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin-bottom: 3px;
+    }
+    .verified  .status-text h2 { color: var(--green); }
+    .not-found .status-text h2 { color: var(--red); }
+    .loading   .status-text h2 { color: var(--sub); }
+
+    .status-text p {
+      font-size: 13px;
+      color: var(--sub);
+      line-height: 1.5;
+    }
+
+    /* DETAILS */
+    .letter-details {
+      padding: 0 32px 32px;
+    }
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--light-bg);
+      gap: 16px;
+    }
+    .detail-row:last-child { border-bottom: none; }
+    .detail-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--sub);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+    .detail-value {
+      font-size: 14px;
+      color: var(--ink);
+      text-align: right;
+      font-weight: 500;
+    }
+
+    .detail-row-deliverables {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .scores-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 100%;
+    }
+    .score-entry {
+      font-size: 12px;
+      color: var(--sub);
+      line-height: 1.4;
+      white-space: nowrap;
+    }
+    .score-entry strong { color: var(--ink); }
+
+    .tools-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: flex-end;
+    }
+    .tool-tag {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--sub);
+      background: var(--light-bg);
+      border-radius: 6px;
+      padding: 3px 9px;
+      letter-spacing: 0.2px;
+    }
+
+    /* REF BADGE */
+    .ref-badge {
+      display: inline-block;
+      background: var(--light-bg);
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--sub);
+      font-family: 'SF Mono', 'Fira Code', monospace;
+    }
+
+    /* NOT FOUND */
+    .not-found-body {
+      padding: 0 32px 32px;
+    }
+    .not-found-body p {
+      font-size: 14px;
+      color: var(--sub);
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .not-found-body a { color: var(--mag); }
+
+    /* LETTER DIAGRAM */
+    .letter-diagram {
+      background: #f9f9fb;
+      border: 1px solid #e5e5ea;
+      border-radius: 12px;
+      padding: 14px;
+      margin: 14px 0 18px;
+    }
+    .letter-diagram-inner {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 10px 12px;
+    }
+    .letter-diagram-body {
+      font-size: 8px;
+      color: #ccc;
+      font-family: -apple-system, sans-serif;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    .letter-diagram-sig {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 12px;
+    }
+    .letter-diagram-name {
+      font-size: 8.5px;
+      color: #555;
+      font-family: -apple-system, sans-serif;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .letter-diagram-right {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .letter-diagram-qr-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+    }
+    .letter-diagram-qr {
+      width: 40px;
+      height: 40px;
+      background: var(--ink);
+      border-radius: 3px;
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 1.5px;
+      padding: 3px;
+    }
+    .qr-cell { background: #fff; border-radius: 1px; }
+    .qr-cell.b { background: var(--ink); }
+    .letter-diagram-ref {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 6.5px;
+      color: #aaa;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+    }
+    .letter-diagram-labels {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: flex-start;
+      padding-bottom: 2px;
+    }
+    .diagram-label {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--mag);
+      background: #fff0fd;
+      border: 1px solid #f0c0ec;
+      border-radius: 6px;
+      padding: 2px 7px;
+      white-space: nowrap;
+    }
+    .diagram-label::before { content: '←'; }
+
+    /* NO REF */
+    .no-ref-body {
+      padding: 0 32px 32px;
+    }
+    .no-ref-body p {
+      font-size: 14px;
+      color: var(--sub);
+      line-height: 1.7;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--ink);
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .footer-logo-icon { width: 24px; height: 24px; flex-shrink: 0; }
+    .footer-logo-icon img { width: 24px; height: 24px; object-fit: contain; display: block; }
+    .footer-name { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.6); }
+    .footer-right { font-size: 11px; color: rgba(255,255,255,0.2); }
+
+    @media (max-width: 600px) {
+      #nav { padding: 0 20px; }
+      .status-banner { padding: 22px 20px 18px; }
+      .letter-details, .not-found-body, .no-ref-body { padding-left: 20px; padding-right: 20px; }
+      footer { padding: 20px; flex-direction: column; gap: 8px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV (injected by shared/components.js) -->
+<div id="mgn-nav"></div>
+
+<main>
+  <div class="verify-card" id="card">
+    <div class="status-banner loading">
+      <div class="status-icon">⏳</div>
+      <div class="status-text">
+        <h2>Checking…</h2>
+        <p>Looking up reference code.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER (injected by shared/components.js) -->
+<div id="mgn-footer"></div>
+
+<script src="../shared/components.js"></script>
+
+<script>
+  // ── Letter database ──────────────────────────────────────────────────────
+  // Add one entry per issued letter.
+  const LETTERS = {
+    'RS-TECH-2026-001': {
+      name:       'Ray Seaman',
+      track:      'Technology',
+      type:       'Term Fellowship',
+      period:     'January – May 2026',
+      issued:     '20 June 2026',
+      issuer:     'Okan Cimen, Managing Director',
+      scores: [
+        { title: 'Technical Audit — Eduentry Web Platform',    score: '8 / 10' },
+        { title: 'API Documentation — Internal Data Pipeline', score: '7.5 / 10' },
+        { title: 'Bug Triage & QA Report — Mobile Assessment Flow', score: '8 / 10' },
+      ],
+      tools: ['Jira', 'Slack', 'Google Drive', 'Chrome DevTools', 'Lighthouse', 'Postman', 'Agentic AI (Claude)'],
+      status: 'active',
+    },
+    'JS-BIZ-2026-SAMPLE': {
+      name:       'John Sample',
+      track:      'Business Management',
+      type:       'Term Fellowship (Sample Document)',
+      period:     'January – May 2026',
+      issued:     '20 June 2026',
+      issuer:     'Okan Cimen, Managing Director',
+      scores: [
+        { title: 'Competitor Analysis — EdTech Market (Southeast Asia)', score: '8 / 10' },
+        { title: 'Process Documentation — Student Onboarding Workflow',  score: '8.5 / 10' },
+        { title: 'Market Entry Brief — Indonesia Expansion',             score: '7.5 / 10' },
+      ],
+      tools: ['Jira', 'Slack', 'Google Drive', 'Notion', 'Google Slides', 'Google Docs', 'Agentic AI (Claude)'],
+      status: 'sample',
+    },
+    'IO-BIZ-2026-001': {
+      name:       'Idil Omuris',
+      track:      'Business Management',
+      type:       'Term Fellowship',
+      period:     'January – May 2026',
+      issued:     '20 June 2026',
+      issuer:     'Okan Cimen, Managing Director',
+      scores: [
+        { title: 'Competitor Analysis — EdTech Market (Southeast Asia)', score: '8 / 10' },
+        { title: 'Process Documentation — Student Onboarding Workflow',  score: '8.5 / 10' },
+        { title: 'Market Entry Brief — Indonesia Expansion',             score: '7.5 / 10' },
+      ],
+      tools: ['Jira', 'Slack', 'Google Drive', 'Notion', 'Google Slides', 'Google Docs', 'Agentic AI (Claude)'],
+      status: 'active',
+    },
+  };
+
+  // ── Render ────────────────────────────────────────────────────────────────
+  (function () {
+    const ref  = new URLSearchParams(window.location.search).get('ref') || '';
+    const card = document.getElementById('card');
+
+    if (!ref) {
+      card.innerHTML = `
+        <div class="status-banner not-found">
+          <div class="status-icon">❓</div>
+          <div class="status-text">
+            <h2>No reference code</h2>
+            <p>Please scan the QR code on the original letter.</p>
+          </div>
+        </div>
+        <div class="no-ref-body">
+          <p>Each Magenta Networks reference letter contains a unique QR code that links directly to this page. If you have a letter and cannot scan it, email <a href="mailto:c.o@mgnnetworks.com">c.o@mgnnetworks.com</a> with the reference number printed below the QR code.</p>
+        </div>`;
+      return;
+    }
+
+    const letter = LETTERS[ref.trim().toUpperCase()];
+
+    if (!letter) {
+      card.innerHTML = `
+        <div class="status-banner not-found">
+          <div class="status-icon">✗</div>
+          <div class="status-text">
+            <h2>Letter not found</h2>
+            <p>Reference code <strong>${escHtml(ref)}</strong> is not in our records.</p>
+          </div>
+        </div>
+        <div class="not-found-body">
+          <p><strong>Where to find the reference code</strong> — look at the <strong>bottom-right corner</strong> of the letter, directly below the QR code:</p>
+
+          <div class="letter-diagram">
+            <div class="letter-diagram-inner">
+              <div class="letter-diagram-body">Yours sincerely,</div>
+              <div class="letter-diagram-sig">
+                <div class="letter-diagram-name">
+                  Okan Cimen<br />
+                  <span style="font-weight:400;color:#aaa;">Managing Director · Magenta Networks Pte Ltd</span>
+                </div>
+                <div class="letter-diagram-right">
+                  <div class="letter-diagram-qr-col">
+                    <div class="letter-diagram-qr">
+                      <div class="qr-cell b"></div><div class="qr-cell b"></div><div class="qr-cell b"></div><div class="qr-cell b"></div><div class="qr-cell b"></div>
+                      <div class="qr-cell b"></div><div class="qr-cell"></div><div class="qr-cell b"></div><div class="qr-cell"></div><div class="qr-cell b"></div>
+                      <div class="qr-cell b"></div><div class="qr-cell b"></div><div class="qr-cell"></div><div class="qr-cell b"></div><div class="qr-cell b"></div>
+                      <div class="qr-cell b"></div><div class="qr-cell"></div><div class="qr-cell b"></div><div class="qr-cell b"></div><div class="qr-cell b"></div>
+                      <div class="qr-cell b"></div><div class="qr-cell b"></div><div class="qr-cell b"></div><div class="qr-cell b"></div><div class="qr-cell b"></div>
+                    </div>
+                    <div class="letter-diagram-ref">REF: RS-TECH-2026-001</div>
+                  </div>
+                  <div class="letter-diagram-labels">
+                    <span class="diagram-label">QR code</span>
+                    <span class="diagram-label">Reference code</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p>The reference code follows the format <span class="ref-badge">XX-TRACK-YYYY-NNN</span> — for example <span class="ref-badge">RS-TECH-2026-001</span>. Copy it exactly, including all dashes.</p>
+          <p>If the code is correct and this error persists, the letter may not be genuine. Email <a href="mailto:c.o@mgnnetworks.com">c.o@mgnnetworks.com</a> to verify directly.</p>
+        </div>`;
+      return;
+    }
+
+    const scoresHTML = letter.scores.map(s => `
+      <div class="score-entry"><strong>${escHtml(s.score)}</strong> — ${escHtml(s.title)}</div>
+    `).join('');
+
+    card.innerHTML = `
+      <div class="status-banner verified">
+        <div class="status-icon">✓</div>
+        <div class="status-text">
+          <h2>Letter verified</h2>
+          <p>This reference letter is authentic and on record with Magenta Networks.</p>
+        </div>
+      </div>
+      <div class="letter-details">
+        <div class="detail-row">
+          <span class="detail-label">Reference</span>
+          <span class="detail-value"><span class="ref-badge">${escHtml(ref.toUpperCase())}</span></span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Recipient</span>
+          <span class="detail-value">${escHtml(letter.name)}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Programme</span>
+          <span class="detail-value">${escHtml(letter.type)}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Track</span>
+          <span class="detail-value">${escHtml(letter.track)}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Period</span>
+          <span class="detail-value">${escHtml(letter.period)}</span>
+        </div>
+        <div class="detail-row detail-row-deliverables">
+          <span class="detail-label">Deliverables</span>
+          <div class="scores-wrap">${scoresHTML}</div>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Tools used</span>
+          <span class="detail-value">
+            <div class="tools-wrap">${letter.tools.map(t => `<span class="tool-tag">${escHtml(t)}</span>`).join('')}</div>
+          </span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Issued by</span>
+          <span class="detail-value">${escHtml(letter.issuer)}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Issue date</span>
+          <span class="detail-value">${escHtml(letter.issued)}</span>
+        </div>
+      </div>`;
+  })();
+
+  function escHtml(str) {
+    return String(str)
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;');
+  }
+</script>
+
+</body>
+</html>

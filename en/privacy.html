@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy &amp; Terms — Magenta Networks Pte Ltd</title>
+  <meta name="description" content="Privacy Policy and Terms of Use for Magenta Networks Pte Ltd (UEN 201540366Z), Singapore." />
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    :root {
+      --ink: #1d1d1f;
+      --sub: #6e6e73;
+      --light-bg: #f5f5f7;
+      --mag: #E60CD2;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+      background: #fff;
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 22px;
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .nav-logo-mark { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo-icon { width: 32px; height: 32px; flex-shrink: 0; }
+    .nav-logo-icon img { width: 32px; height: 32px; object-fit: contain; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 12px; font-weight: 400; color: var(--ink); text-decoration: none; opacity: 0.85; }
+    .nav-links a:hover { opacity: 1; }
+    .nav-apply { font-size: 12px; font-weight: 500; color: #0099BB !important; opacity: 1 !important; }
+    .lang-switch { display: flex; align-items: center; gap: 2px; margin-left: 12px; padding-left: 12px; border-left: 1px solid rgba(0,0,0,0.1); }
+    .ls-item { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; color: var(--sub); text-decoration: none; padding: 4px 7px; border-radius: 5px; }
+    .ls-item:hover { color: var(--ink); background: var(--light-bg); }
+    .ls-item.ls-active { color: var(--ink); background: var(--light-bg); }
+    .mobile-lang { display: flex; gap: 6px; padding: 16px 24px 0; margin-top: 8px; border-top: 1px solid rgba(255,255,255,0.08); }
+    .ml-item { font-size: 11px; font-weight: 700; letter-spacing: 0.5px; color: rgba(255,255,255,0.35); text-decoration: none; padding: 5px 10px; border-radius: 6px; }
+    .ml-item:hover, .ml-item.ml-active { color: #fff; background: rgba(255,255,255,0.1); }
+    .hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 36px; height: 36px; padding: 6px; background: none; border: none; cursor: pointer; z-index: 300; flex-shrink: 0; }
+    .hamburger span { display: block; height: 2px; border-radius: 2px; background: var(--ink); transition: transform .3s, opacity .3s; transform-origin: center; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    #mobile-menu { position: fixed; inset: 0; z-index: 200; background: #000; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; opacity: 0; pointer-events: none; transition: opacity .35s; }
+    #mobile-menu.open { opacity: 1; pointer-events: all; }
+    .mobile-link { display: block; font-size: clamp(28px,8vw,48px); font-weight: 700; letter-spacing: -1.5px; color: rgba(255,255,255,0.85); text-decoration: none; padding: 10px 24px; opacity: 0; transform: translateY(20px); transition: transform .4s, opacity .4s, color .2s; }
+    #mobile-menu.open .mobile-link { transform: none; opacity: 1; }
+    #mobile-menu.open .mobile-link:nth-child(1) { transition-delay: .05s; }
+    #mobile-menu.open .mobile-link:nth-child(2) { transition-delay: .10s; }
+    #mobile-menu.open .mobile-link:nth-child(3) { transition-delay: .15s; }
+    #mobile-menu.open .mobile-link:nth-child(4) { transition-delay: .20s; }
+    #mobile-menu.open .mobile-link:nth-child(5) { transition-delay: .25s; }
+    .mobile-link:hover { color: #fff; transform: translateX(6px); }
+    .mobile-link.apply { color: var(--mag); margin-top: 8px; font-size: clamp(20px,5vw,32px); }
+    .mobile-menu-footer { position: absolute; bottom: 40px; font-size: 12px; color: rgba(255,255,255,0.2); letter-spacing: 0.3px; }
+
+    .page-hero {
+      background: var(--light-bg);
+      padding: 100px 24px 60px;
+    }
+    .page-hero h1 {
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      color: var(--ink);
+      max-width: 680px;
+    }
+    .page-hero .meta {
+      font-size: 13px;
+      color: var(--sub);
+      margin-top: 12px;
+    }
+
+    .doc-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 64px 24px 120px;
+    }
+    .doc-wrap h2 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 14px;
+    }
+    .doc-wrap h2:first-child { margin-top: 0; }
+    .doc-wrap p {
+      font-size: 15px;
+      color: var(--sub);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .doc-wrap ul {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    .doc-wrap ul li {
+      font-size: 15px;
+      color: var(--sub);
+      line-height: 1.75;
+      margin-bottom: 6px;
+    }
+    .doc-wrap a { color: var(--mag); }
+    .divider {
+      border: none;
+      border-top: 1px solid var(--light-bg);
+      margin: 56px 0;
+    }
+
+    footer {
+      background: var(--ink);
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .footer-logo-icon { width: 24px; height: 24px; flex-shrink: 0; }
+    .footer-logo-icon img { width: 24px; height: 24px; object-fit: contain; display: block; }
+    .footer-name { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.6); }
+    .footer-right { font-size: 11px; color: rgba(255,255,255,0.2); }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV (injected by shared/components.js) -->
+<div id="mgn-nav"></div>
+
+<div class="page-hero">
+  <h1>Privacy Policy &amp; Terms of Service</h1>
+  <p class="meta">Magenta Networks Pte Ltd · Singapore · Last updated: June 2026</p>
+</div>
+
+<div class="doc-wrap">
+
+  <h2>1. Who we are</h2>
+  <p>Magenta Networks Pte Ltd ("Magenta Networks", "we", "us") is a company incorporated in Singapore (UEN: 201540366Z). Our registered address is 100 Tras Street, #16-01AM, 100AM, Singapore 079027. We operate the Global Career Fellowship — a remote, project-based programme for students aged 14–22.</p>
+  <p>For privacy enquiries: <a href="mailto:c.o@mgnnetworks.com">c.o@mgnnetworks.com</a></p>
+
+  <h2>2. What information we collect</h2>
+  <p>When you submit an application or use our website we collect:</p>
+  <ul>
+    <li>Student name, age, school, and country</li>
+    <li>Student and parent email addresses</li>
+    <li>Application responses (motivation, department preference)</li>
+    <li>Eduentry psychometric assessment results</li>
+    <li>Payment information (processed by Stripe — we do not store card details)</li>
+    <li>Work deliverables submitted during the programme</li>
+    <li>Basic website usage data (page views, referral source)</li>
+  </ul>
+
+  <h2>3. How we use your information</h2>
+  <ul>
+    <li>To review and process Fellowship applications</li>
+    <li>To communicate programme information to students and parents</li>
+    <li>To assign students to departments based on assessment results</li>
+    <li>To process payments via Stripe</li>
+    <li>To generate reference letters and portfolio documents</li>
+    <li>To improve our programme and website</li>
+  </ul>
+  <p>We do not use your information for advertising, profiling, or automated decision-making beyond the assessment-based department matching.</p>
+
+  <h2>4. Who we share information with</h2>
+  <p>We share minimal data with the following third-party services, solely to operate the programme:</p>
+  <ul>
+    <li><strong>Stripe</strong> — payment processing (Singapore/US)</li>
+    <li><strong>Eduentry</strong> — psychometric assessment platform</li>
+    <li><strong>Google Workspace</strong> — email, Drive, document storage</li>
+    <li><strong>Slack</strong> — student and mentor communication</li>
+    <li><strong>Atlassian (Jira)</strong> — project and task management</li>
+    <li><strong>Notion</strong> — programme hub and knowledge base</li>
+  </ul>
+  <p>We never sell, rent, or share personal data with third parties for marketing purposes.</p>
+
+  <h2>5. Data retention</h2>
+  <p>We retain student records and deliverables for a minimum of 3 years after programme completion, to support reference letter verification and alumni enquiries. You may request deletion at any time (subject to legal obligations).</p>
+
+  <h2>6. Your rights</h2>
+  <p>Depending on your country of residence, you may have rights to:</p>
+  <ul>
+    <li>Access the personal data we hold about you</li>
+    <li>Correct inaccurate data</li>
+    <li>Request deletion of your data</li>
+    <li>Object to certain processing activities</li>
+    <li>Receive a copy of your data in a portable format</li>
+  </ul>
+  <p>To exercise any of these rights, email <a href="mailto:c.o@mgnnetworks.com">c.o@mgnnetworks.com</a>. We respond within 30 days.</p>
+
+  <h2>7. Cookies</h2>
+  <p>Our website uses no tracking cookies and no third-party advertising scripts. We do not use Google Analytics or Meta Pixel. Basic server logs (IP address, page visited, timestamp) may be retained by our hosting provider for up to 30 days.</p>
+
+  <hr class="divider" />
+
+  <h2>Terms of Service</h2>
+
+  <h2>8. Programme enrolment</h2>
+  <p>Enrolment in the Global Career Fellowship is confirmed upon receipt of payment. By paying, the student (and their parent or guardian if under 18) agrees to:</p>
+  <ul>
+    <li>Complete assigned briefs to the standard required for approval</li>
+    <li>Communicate professionally via Slack and Jira</li>
+    <li>Not share programme materials, briefs, or company information with third parties</li>
+    <li>Represent work as their own — any plagiarism or AI-generated submission passed off as original work results in immediate termination without refund</li>
+  </ul>
+
+  <h2>9. Reference letters</h2>
+  <p>A reference letter is issued only upon satisfactory completion of the programme. "Satisfactory completion" means all briefs submitted during the enrolled term received a score of 7/10 or above, or were revised to that standard. The letter is signed by the Managing Director and reflects only work actually completed and reviewed. Magenta Networks does not issue letters for incomplete or unapproved work under any circumstances.</p>
+
+  <h2>10. Refund policy</h2>
+  <ul>
+    <li><strong>Cancellation before onboarding begins:</strong> full refund within 7 days of payment</li>
+    <li><strong>Cancellation after onboarding begins:</strong> pro-rated refund for unused completed months</li>
+    <li><strong>Completed months:</strong> non-refundable</li>
+    <li><strong>Programme cancellation by Magenta Networks:</strong> full refund issued within 14 days</li>
+  </ul>
+
+  <h2>11. Intellectual property</h2>
+  <p>Project briefs, brand materials, and company information provided during the programme remain the property of Magenta Networks Pte Ltd and the respective portfolio companies. Work completed by the student (deliverables) may be included in the student's personal portfolio with acknowledgement of Magenta Networks as the programme host. Deliverables may not be published or shared without written consent.</p>
+
+  <h2>12. Limitation of liability</h2>
+  <p>Magenta Networks provides the programme on an "as is" basis. We are not responsible for outcomes arising from the use of the reference letter or portfolio in university applications or job applications. We make no guarantees regarding admissions results or employment outcomes.</p>
+
+  <h2>13. Governing law</h2>
+  <p>These terms are governed by the laws of Singapore. Any dispute arising from these terms shall be subject to the exclusive jurisdiction of the courts of Singapore.</p>
+
+  <h2>14. Changes to this policy</h2>
+  <p>We may update this policy periodically. Material changes will be communicated by email to enrolled students and parents. Continued use of the programme after notification constitutes acceptance of the updated terms.</p>
+
+  <p style="margin-top: 40px; font-size: 13px; color: var(--sub);">Questions? Email <a href="mailto:c.o@mgnnetworks.com">c.o@mgnnetworks.com</a></p>
+
+</div>
+
+<!-- FOOTER (injected by shared/components.js) -->
+<div id="mgn-footer"></div>
+
+<script src="../shared/components.js"></script>
+</body>
+</html>
