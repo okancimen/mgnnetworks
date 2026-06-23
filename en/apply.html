@@ -507,8 +507,8 @@
     btn.textContent = 'Sending…';
     btn.disabled = true;
 
-    emailjs.sendForm('service_0vj14zs', 'template_ikv5gub', form)
-      .then(() => emailjs.sendForm('service_0vj14zs', 'template_7l9inkv', form))
+    emailjs.sendForm('service_64vwt2q', 'template_ikv5gub', form)
+      .then(() => emailjs.sendForm('service_64vwt2q', 'template_7l9inkv', form))
       .then(() => {
         btn.textContent = 'Application received ✓';
         btn.style.background = '#1d1d1f';
@@ -518,9 +518,15 @@
       .catch(err => {
         btn.textContent = 'Submit application →';
         btn.disabled = false;
-        const errEl = form.querySelector('.form-error') || Object.assign(document.createElement('p'), { className: 'form-error', style: 'color:#D40E32;font-size:13px;margin-top:12px;' });
-        errEl.textContent = 'Something went wrong. Please try again or email us at info@mgnnetworks.com';
-        if (!form.querySelector('.form-error')) btn.parentNode.appendChild(errEl);
+        const msg = err && (err.text || err.message || JSON.stringify(err));
+        let errEl = form.querySelector('.form-error');
+        if (!errEl) {
+          errEl = document.createElement('p');
+          errEl.className = 'form-error';
+          errEl.style = 'color:#D40E32;font-size:13px;margin-top:12px;';
+          btn.parentNode.appendChild(errEl);
+        }
+        errEl.textContent = 'Error: ' + msg;
         console.error('EmailJS error:', err);
       });
   }
