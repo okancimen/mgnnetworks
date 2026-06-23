@@ -508,7 +508,14 @@
     btn.disabled = true;
 
     emailjs.sendForm('service_64vwt2q', 'template_ikv5gub', form)
-      .then(() => emailjs.sendForm('service_64vwt2q', 'template_r8q7svk', form))
+      .then(() => emailjs.send('service_64vwt2q', 'template_r8q7svk', {
+        student_email: form.querySelector('[name="student_email"]').value,
+        parent_email:  form.querySelector('[name="parent_email"]').value,
+        first_name:    form.querySelector('[name="first_name"]').value,
+        last_name:     form.querySelector('[name="last_name"]').value,
+        programme:     form.querySelector('[name="programme"]').value,
+        start_month:   form.querySelector('[name="start_month"]').value,
+      }))
       .then(() => {
         btn.textContent = 'Application received ✓';
         btn.style.background = '#1d1d1f';
