@@ -494,10 +494,7 @@
 <!-- FOOTER (injected by shared/components.js) -->
 <div id="mgn-footer"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
-  emailjs.init('AAPPr5OC-gg7AfMCA');
-
   function handleSubmit(e) {
     e.preventDefault();
     const form  = e.target;
@@ -507,35 +504,34 @@
     btn.textContent = 'Sending…';
     btn.disabled = true;
 
-    emailjs.sendForm('service_64vwt2q', 'template_ikv5gub', form)
-      .then(() => emailjs.send('service_64vwt2q', 'template_r8q7svk', {
-        student_email: form.querySelector('[name="student_email"]').value,
-        parent_email:  form.querySelector('[name="parent_email"]').value,
-        first_name:    form.querySelector('[name="first_name"]').value,
-        last_name:     form.querySelector('[name="last_name"]').value,
-        programme:     form.querySelector('[name="programme"]').value,
-        start_month:   form.querySelector('[name="start_month"]').value,
-      }))
-      .then(() => {
-        btn.textContent = 'Application received ✓';
-        btn.style.background = '#1d1d1f';
-        form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
-        if (legal) legal.innerHTML = 'Thank you. We review every application personally and respond within 5 business days.';
-      })
-      .catch(err => {
-        btn.textContent = 'Submit application →';
-        btn.disabled = false;
-        const msg = err && (err.text || err.message || JSON.stringify(err));
-        let errEl = form.querySelector('.form-error');
-        if (!errEl) {
-          errEl = document.createElement('p');
-          errEl.className = 'form-error';
-          errEl.style = 'color:#D40E32;font-size:13px;margin-top:12px;';
-          btn.parentNode.appendChild(errEl);
-        }
-        errEl.textContent = 'Error: ' + msg;
-        console.error('EmailJS error:', err);
-      });
+    const payload = {};
+    new FormData(form).forEach((v, k) => payload[k] = v);
+
+    fetch('/.netlify/functions/send-application', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    })
+    .then(res => res.ok ? res.json() : res.json().then(d => Promise.reject(d)))
+    .then(() => {
+      btn.textContent = 'Application received ✓';
+      btn.style.background = '#1d1d1f';
+      form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
+      if (legal) legal.innerHTML = 'Thank you. We review every application personally and respond within 5 business days.';
+    })
+    .catch(err => {
+      btn.textContent = 'Submit application →';
+      btn.disabled = false;
+      let errEl = form.querySelector('.form-error');
+      if (!errEl) {
+        errEl = document.createElement('p');
+        errEl.className = 'form-error';
+        errEl.style = 'color:#D40E32;font-size:13px;margin-top:12px;';
+        btn.parentNode.appendChild(errEl);
+      }
+      errEl.textContent = 'Something went wrong. Please try again or email us at info@mgnnetworks.com';
+      console.error('Submit error:', err);
+    });
   }
 </script>
 
