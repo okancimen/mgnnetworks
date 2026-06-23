@@ -494,14 +494,34 @@
 <!-- FOOTER (injected by shared/components.js) -->
 <div id="mgn-footer"></div>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
+  emailjs.init('AAPPr5OC-gg7AfMCA');
+
   function handleSubmit(e) {
     e.preventDefault();
-    const btn = e.target.querySelector('.btn-submit');
-    btn.textContent = 'Application received ✓';
-    btn.style.background = '#1d1d1f';
+    const form  = e.target;
+    const btn   = form.querySelector('.btn-submit');
+    const legal = form.querySelector('.form-legal');
+
+    btn.textContent = 'Sending…';
     btn.disabled = true;
-    e.target.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
+
+    emailjs.sendForm('service_0vj14zs', 'template_ikv5gub', form)
+      .then(() => {
+        btn.textContent = 'Application received ✓';
+        btn.style.background = '#1d1d1f';
+        form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
+        if (legal) legal.innerHTML = 'Thank you. We review every application personally and respond within 5 business days.';
+      })
+      .catch(err => {
+        btn.textContent = 'Submit application →';
+        btn.disabled = false;
+        const errEl = form.querySelector('.form-error') || Object.assign(document.createElement('p'), { className: 'form-error', style: 'color:#D40E32;font-size:13px;margin-top:12px;' });
+        errEl.textContent = 'Something went wrong. Please try again or email us at info@mgnnetworks.com';
+        if (!form.querySelector('.form-error')) btn.parentNode.appendChild(errEl);
+        console.error('EmailJS error:', err);
+      });
   }
 </script>
 
