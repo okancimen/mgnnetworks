@@ -508,6 +508,7 @@
     btn.disabled = true;
 
     emailjs.sendForm('service_0vj14zs', 'template_ikv5gub', form)
+      .then(() => emailjs.sendForm('service_0vj14zs', 'template_7l9inkv', form))
       .then(() => {
         btn.textContent = 'Application received ✓';
         btn.style.background = '#1d1d1f';
