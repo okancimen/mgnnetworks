@@ -83,7 +83,7 @@ Singapore · mgnnetworks.com`;
       method: 'POST',
       headers,
       body: JSON.stringify({
-        from: 'Magenta Networks <applications@mgnnetworks.com>',
+        from: 'Magenta Networks <applications@edubot.com.tr>',
         to: ['c.o@mgnnetworks.com'],
         reply_to: student_email,
         subject: `New Application — ${first_name} ${last_name} (${programme})`,
@@ -96,7 +96,7 @@ Singapore · mgnnetworks.com`;
       method: 'POST',
       headers,
       body: JSON.stringify({
-        from: 'Magenta Networks <applications@mgnnetworks.com>',
+        from: 'Magenta Networks <applications@edubot.com.tr>',
         to: [student_email],
         cc: parent_email || undefined,
         reply_to: 'info@mgnnetworks.com',
