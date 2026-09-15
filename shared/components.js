@@ -8,12 +8,12 @@
   'use strict';
 
   // ── Language config ───────────────────────────────────────────────────────
-  const LANGS      = ['en', 'ar', 'tr', 'cn', 'fr'];
+  const LANGS      = ['en', 'es', 'ar', 'tr', 'cn', 'fr'];
   const RTL        = ['ar'];
   const OTHER_SUBS = ['verify', 'letters'];
 
-  const FLAGS = { en: '🇬🇧', ar: '🇸🇦', tr: '🇹🇷', cn: '🇨🇳', fr: '🇫🇷' };
-  const NAMES = { en: 'English', ar: 'العربية', tr: 'Türkçe', cn: '中文', fr: 'Français' };
+  const FLAGS = { en: '🇬🇧', es: '🇪🇸', ar: '🇸🇦', tr: '🇹🇷', cn: '🇨🇳', fr: '🇫🇷' };
+  const NAMES = { en: 'English', es: 'Español', ar: 'العربية', tr: 'Türkçe', cn: '中文', fr: 'Français' };
 
   // ── Detect context from URL ───────────────────────────────────────────────
   const parts      = location.pathname.replace(/\/+$/, '').split('/').filter(Boolean);
@@ -23,7 +23,7 @@
   const inSub      = inLangSub || inOtherSub;
   const base       = inSub ? '../' : './';
   const lastSeg    = parts[parts.length - 1] || '';
-  const isIndex    = !inOtherSub && (lastSeg === '' || lastSeg === 'index.html');
+  const isIndex    = !inOtherSub && (lastSeg === '' || lastSeg === 'index.html' || LANGS.includes(lastSeg));
   const pageFile   = isIndex ? '' : lastSeg;
 
   const homeHref    = isIndex ? '#hero' : (inOtherSub ? `${base}en/index.html` : 'index.html');
