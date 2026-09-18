@@ -62,7 +62,7 @@
 <nav id="nav">
   <a href="#hero" class="nav-logo-mark">
     <div class="nav-logo-icon">
-      <img src="${base}logo.png" alt="Magenta Networks" width="32" height="32" />
+      <img src="${base}logo.png" alt="Magenta Networks" />
     </div>
   </a>
   <ul class="nav-links">
@@ -104,7 +104,7 @@
 <nav id="nav">
   <a href="${h}" class="nav-logo-mark">
     <div class="nav-logo-icon">
-      <img src="${base}logo.png" alt="Magenta Networks" width="32" height="32" />
+      <img src="${base}logo.png" alt="Magenta Networks" />
     </div>
   </a>
   <ul class="nav-links">
@@ -142,7 +142,7 @@
     return `
 <nav id="nav">
   <a href="${homeHref}" class="nav-logo">
-    <img src="${base}logo.png" alt="Magenta Networks" width="32" height="32" />
+    <img src="${base}logo.png" alt="Magenta Networks" />
   </a>
   <a href="${homeHref}" class="nav-back">← Back to mgnnetworks.com</a>
   ${langDropdownHTML()}
@@ -156,7 +156,7 @@
 <footer>
   <a href="${homeHref}" class="footer-logo">
     <div class="footer-logo-icon">
-      <img src="${base}logo.png" alt="Magenta Networks" width="32" height="32" />
+      <img src="${base}logo.png" alt="Magenta Networks" />
     </div>
     <span class="footer-name">Magenta Networks Pte Ltd &nbsp;·&nbsp; <a href="https://companieshouse.sg/magenta-networks-201540366Z?ref=search" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;opacity:.6">UEN 201540366Z</a> &nbsp;·&nbsp; Singapore &nbsp;·&nbsp; Incorporated 2015</span>
   </a>
