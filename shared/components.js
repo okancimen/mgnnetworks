@@ -113,6 +113,7 @@
     <li><a href="fellowship.html">Fellowship</a></li>
     <li><a href="fellowship.html#how">How It Works</a></li>
     <li><a href="fellowship.html#faq">FAQ</a></li>
+    <li><a href="fellowship.html#compare">Compare</a></li>
     <li><a href="${h}#leadership">Leadership</a></li>
     <li><a href="insights/index.html">Insights</a></li>
     <li><a href="${h}#contact" class="nav-apply">Get in touch</a></li>
@@ -129,9 +130,10 @@
   <a href="fellowship.html"    class="mobile-link">Fellowship</a>
   <a href="fellowship.html#how" class="mobile-link">How It Works</a>
   <a href="fellowship.html#faq" class="mobile-link">FAQ</a>
+  <a href="fellowship.html#compare" class="mobile-link">Compare</a>
   <a href="${h}#leadership"    class="mobile-link">Leadership</a>
   <a href="insights/index.html" class="mobile-link">Insights</a>
-  <a href="${h}#contact"       class="mobile-link apply">Get in touch →</a>
+  <a href="apply.html"         class="mobile-link apply">Apply for Fellowship →</a>
   <div class="mobile-lang">${mobileLangHTML()}</div>
   <span class="mobile-menu-footer">Magenta Networks Pte Ltd · Singapore</span>
 </div>`;
