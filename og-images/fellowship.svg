@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#E60CD2" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="630" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="630" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Magenta accent bar -->
+  <rect x="80" y="180" width="5" height="270" rx="3" fill="#E60CD2"/>
+
+  <!-- Tag pill -->
+  <rect x="107" y="178" width="230" height="36" rx="18" fill="rgba(230,12,210,0.15)"/>
+  <text x="222" y="202" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="13" font-weight="700" letter-spacing="2" text-anchor="middle" fill="#E60CD2" text-transform="uppercase">FELLOWSHIP</text>
+
+  <!-- Main headline -->
+  <text x="107" y="284" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="62" font-weight="800" letter-spacing="-2" fill="#f5f5f7">Global Career</text>
+  <text x="107" y="358" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="62" font-weight="800" letter-spacing="-2" fill="#E60CD2">Fellowship</text>
+
+  <!-- Subtitle -->
+  <text x="107" y="414" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="22" font-weight="400" fill="rgba(245,245,247,0.5)" letter-spacing="-0.3">Real Work. Real Companies. Real Credentials.</text>
+
+  <!-- Stats row -->
+  <text x="107" y="464" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="15" font-weight="600" fill="#E60CD2">&lt; 30% accepted</text>
+  <text x="280" y="464" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="15" font-weight="400" fill="rgba(245,245,247,0.3)">·</text>
+  <text x="295" y="464" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="15" font-weight="400" fill="rgba(245,245,247,0.45)">Ages 14–22</text>
+  <text x="390" y="464" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="15" font-weight="400" fill="rgba(245,245,247,0.3)">·</text>
+  <text x="405" y="464" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="15" font-weight="400" fill="rgba(245,245,247,0.45)">Remote &amp; Async</text>
+  <text x="530" y="464" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="15" font-weight="400" fill="rgba(245,245,247,0.3)">·</text>
+  <text x="545" y="464" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="15" font-weight="400" fill="rgba(245,245,247,0.45)">MD-Signed Reference Letter</text>
+
+  <!-- Branding bottom right -->
+  <text x="1120" y="580" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="15" font-weight="700" text-anchor="end" fill="rgba(245,245,247,0.25)" letter-spacing="0.5">Magenta Networks</text>
+  <text x="1120" y="600" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" font-size="13" font-weight="400" text-anchor="end" fill="rgba(245,245,247,0.15)">mgnnetworks.com</text>
+
+  <!-- Right side decorative element -->
+  <circle cx="980" cy="315" r="200" fill="none" stroke="rgba(230,12,210,0.08)" stroke-width="1"/>
+  <circle cx="980" cy="315" r="140" fill="none" stroke="rgba(230,12,210,0.06)" stroke-width="1"/>
+  <circle cx="980" cy="315" r="80" fill="none" stroke="rgba(230,12,210,0.1)" stroke-width="1"/>
+  <circle cx="980" cy="315" r="4" fill="rgba(230,12,210,0.5)"/>
+</svg>

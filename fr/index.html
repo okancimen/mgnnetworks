@@ -20,6 +20,7 @@
   </script>
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="preload" as="image" href="/logo.png" />
   <title>Magenta Networks — Groupe Technologique | Singapour</title>
   <meta name="description" content="Groupe technologique de Singapour qui développe des plateformes, déploie des consultants seniors à l'international et forme des talents étudiants via la Global Career Fellowship." />
   <meta name="robots" content="index, follow" />
@@ -588,6 +589,68 @@
     .pill-mag { background: var(--mag); color: #fff; font-size: 15px; font-weight: 500; }
     .pill-mag:hover { background: #c0185a; transform: translateY(-1px); }
 
+
+    /* ── INSIGHTS PREVIEW ── */
+    #insights-preview {
+      background: var(--light-bg);
+      padding: 120px 24px;
+      text-align: center;
+    }
+    #insights-preview .kicker {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.8px;
+      text-transform: uppercase; color: var(--mag);
+      margin-bottom: 16px;
+    }
+    #insights-preview > h2 {
+      font-size: clamp(32px, 5vw, 54px); font-weight: 800;
+      letter-spacing: -1.5px; line-height: 1.1;
+      margin-bottom: 0;
+    }
+    .ip-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 980px;
+      margin: 56px auto 0;
+      text-align: left;
+    }
+    .ip-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px 28px;
+      text-decoration: none;
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: transform .2s, box-shadow .2s;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    .ip-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
+    .ip-tag {
+      display: inline-block;
+      font-size: 10px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--mag);
+      background: rgba(230,12,210,0.1);
+      border-radius: 980px; padding: 4px 12px;
+      align-self: flex-start;
+    }
+    .ip-card h3 {
+      font-size: 17px; font-weight: 700; letter-spacing: -0.3px;
+      line-height: 1.35; color: var(--ink); flex: 1;
+    }
+    .ip-card p { font-size: 13px; color: var(--sub); line-height: 1.6; }
+    .ip-read { font-size: 13px; font-weight: 600; color: var(--mag); margin-top: 4px; }
+    .ip-more { margin-top: 48px; }
+    .pill-outline {
+      background: transparent;
+      color: var(--ink);
+      border: 1.5px solid rgba(0,0,0,0.2);
+    }
+    .pill-outline:hover { border-color: var(--ink); transform: translateY(-1px); }
+    @media (max-width: 900px) { .ip-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .ip-grid { grid-template-columns: 1fr; gap: 16px; } }
+
     /* ── LEADERSHIP ── */
     #leadership { background: var(--light-bg); padding: 140px 24px; }
     .leadership-wrap { max-width: 980px; margin: 0 auto; }
@@ -1083,6 +1146,35 @@
   <div class="fellowship-teaser-pills reveal reveal-delay-4">
     <a href="fellowship.html" class="pill pill-mag">Explorer la Fellowship →</a>
     <a href="apply.html" class="pill pill-ghost">Postuler maintenant →</a>
+  </div>
+</section>
+
+<!-- INSIGHTS PREVIEW -->
+<section id="insights-preview">
+  <p class="kicker reveal">De Nos Analyses</p>
+  <h2 class="reveal reveal-delay-1">Des Conseils Carrière<br />À Ne Pas Manquer.</h2>
+  <div class="ip-grid">
+    <a href="insights/how-to-get-work-experience-as-a-student.html" class="ip-card reveal">
+      <span class="ip-tag">Carrière</span>
+      <h3>Comment Obtenir une Expérience Professionnelle en tant qu'Étudiant</h3>
+      <p>Six voies éprouvées pour acquérir une expérience réelle avant de terminer l'école.</p>
+      <span class="ip-read">Lire l'article →</span>
+    </a>
+    <a href="insights/how-to-write-a-cv-with-no-experience.html" class="ip-card reveal">
+      <span class="ip-tag">Carrière</span>
+      <h3>Comment Rédiger un CV Sans Expérience</h3>
+      <p>Un guide étape par étape pour créer un CV qui attire l'attention quand vous avez peu à montrer.</p>
+      <span class="ip-read">Lire l'article →</span>
+    </a>
+    <a href="insights/what-is-an-internship-and-how-to-get-one.html" class="ip-card reveal">
+      <span class="ip-tag">Carrière</span>
+      <h3>Qu'est-ce qu'un Stage et Comment en Obtenir Un ?</h3>
+      <p>Tout ce que vous devez savoir sur les stages — à quoi s'attendre et comment se démarquer.</p>
+      <span class="ip-read">Lire l'article →</span>
+    </a>
+  </div>
+  <div class="ip-more reveal reveal-delay-2">
+    <a href="insights/index.html" class="pill pill-outline">Toutes les analyses →</a>
   </div>
 </section>
 

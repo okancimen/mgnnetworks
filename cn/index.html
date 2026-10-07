@@ -20,6 +20,7 @@
   </script>
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="preload" as="image" href="/logo.png" />
   <title>Magenta Networks — 科技与人才集团 | 新加坡</title>
   <meta name="description" content="总部位于新加坡的科技集团，构建平台、在全球部署高级顾问，并通过全球职业奖学金项目培育学生人才。" />
   <meta name="robots" content="index, follow" />
@@ -189,6 +190,23 @@
     .fellowship-teaser-pills { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative; }
     .pill-mag { background: var(--mag); color: #fff; font-size: 15px; font-weight: 500; }
     .pill-mag:hover { background: #c0185a; transform: translateY(-1px); }
+    /* INSIGHTS PREVIEW */
+    #insights-preview { background: var(--light-bg); padding: 120px 24px; text-align: center; }
+    #insights-preview .kicker { font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--mag); margin-bottom: 16px; }
+    #insights-preview > h2 { font-size: clamp(32px, 5vw, 54px); font-weight: 800; letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 0; }
+    .ip-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 980px; margin: 56px auto 0; text-align: left; }
+    .ip-card { background: #fff; border-radius: 16px; padding: 32px 28px; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; gap: 14px; transition: transform .2s, box-shadow .2s; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+    .ip-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
+    .ip-tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--mag); background: rgba(230,12,210,0.1); border-radius: 980px; padding: 4px 12px; align-self: flex-start; }
+    .ip-card h3 { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; line-height: 1.35; color: var(--ink); flex: 1; }
+    .ip-card p { font-size: 13px; color: var(--sub); line-height: 1.6; }
+    .ip-read { font-size: 13px; font-weight: 600; color: var(--mag); margin-top: 4px; }
+    .ip-more { margin-top: 48px; }
+    .pill-outline { background: transparent; color: var(--ink); border: 1.5px solid rgba(0,0,0,0.2); }
+    .pill-outline:hover { border-color: var(--ink); transform: translateY(-1px); }
+    @media (max-width: 900px) { .ip-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .ip-grid { grid-template-columns: 1fr; gap: 16px; } }
+
     #leadership { background: var(--light-bg); padding: 140px 24px; }
     .leadership-wrap { max-width: 980px; margin: 0 auto; }
     .leadership-top { text-align: center; margin-bottom: 80px; }
@@ -371,6 +389,35 @@
   <div class="fellowship-teaser-pills reveal reveal-delay-4">
     <a href="fellowship.html" class="pill pill-mag">了解奖学金项目 →</a>
     <a href="apply.html" class="pill pill-ghost">立即申请 →</a>
+  </div>
+</section>
+
+<!-- INSIGHTS PREVIEW -->
+<section id="insights-preview">
+  <p class="kicker reveal">来自我们的洞察</p>
+  <h2 class="reveal reveal-delay-1">值得一读的<br />职业建议。</h2>
+  <div class="ip-grid">
+    <a href="insights/how-to-get-work-experience-as-a-student.html" class="ip-card reveal">
+      <span class="ip-tag">职业</span>
+      <h3>学生如何获得工作经验</h3>
+      <p>在完成学业之前获得真实经验的六条经过验证的途径。</p>
+      <span class="ip-read">阅读文章 →</span>
+    </a>
+    <a href="insights/how-to-write-a-cv-with-no-experience.html" class="ip-card reveal">
+      <span class="ip-tag">职业</span>
+      <h3>如何撰写没有工作经验的简历</h3>
+      <p>当你几乎没有成绩可展示时，如何制作引人注目的简历的分步指南。</p>
+      <span class="ip-read">阅读文章 →</span>
+    </a>
+    <a href="insights/what-is-an-internship-and-how-to-get-one.html" class="ip-card reveal">
+      <span class="ip-tag">职业</span>
+      <h3>什么是实习？如何获得实习机会？</h3>
+      <p>关于实习你需要知道的一切——预期什么以及如何脱颖而出。</p>
+      <span class="ip-read">阅读文章 →</span>
+    </a>
+  </div>
+  <div class="ip-more reveal reveal-delay-2">
+    <a href="insights/index.html" class="pill pill-outline">查看全部 →</a>
   </div>
 </section>
 
