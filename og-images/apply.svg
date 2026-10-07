@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#E60CD2" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="630" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="630" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <!-- Magenta accent bar -->
+  <rect x="80" y="180" width="5" height="270" rx="3" fill="#E60CD2"/>
+  <!-- Tag pill -->
+  <rect x="107" y="178" width="270" height="36" rx="18" fill="rgba(230,12,210,0.15)"/>
+  <text x="242" y="202" font-family="-apple-system,'SF Pro Display','Helvetica Neue',sans-serif" font-size="13" font-weight="700" letter-spacing="2" text-anchor="middle" fill="#E60CD2">GLOBAL CAREER FELLOWSHIP</text>
+  <!-- Main headline -->
+  <text x="107" y="284" font-family="-apple-system,'SF Pro Display','Helvetica Neue',sans-serif" font-size="66" font-weight="800" letter-spacing="-2.5" fill="#f5f5f7">Apply for the</text>
+  <text x="107" y="362" font-family="-apple-system,'SF Pro Display','Helvetica Neue',sans-serif" font-size="66" font-weight="800" letter-spacing="-2.5" fill="#E60CD2">Fellowship</text>
+  <!-- Subtitle -->
+  <text x="107" y="418" font-family="-apple-system,'SF Pro Display','Helvetica Neue',sans-serif" font-size="21" font-weight="400" fill="rgba(245,245,247,0.45)" letter-spacing="-0.3">Ages 14–22 · Remote &amp; Async · Less than 30% accepted</text>
+  <!-- Stats -->
+  <text x="107" y="464" font-family="-apple-system,'SF Pro Display','Helvetica Neue',sans-serif" font-size="15" font-weight="600" fill="#E60CD2">MD-signed reference letter</text>
+  <text x="340" y="464" font-family="-apple-system,'SF Pro Display','Helvetica Neue',sans-serif" font-size="15" font-weight="400" fill="rgba(245,245,247,0.3)">·</text>
+  <text x="355" y="464" font-family="-apple-system,'SF Pro Display','Helvetica Neue',sans-serif" font-size="15" font-weight="400" fill="rgba(245,245,247,0.45)">Real deliverables</text>
+  <text x="480" y="464" font-family="-apple-system,'SF Pro Display','Helvetica Neue',sans-serif" font-size="15" font-weight="400" fill="rgba(245,245,247,0.3)">·</text>
+  <text x="495" y="464" font-family="-apple-system,'SF Pro Display','Helvetica Neue',sans-serif" font-size="15" font-weight="400" fill="rgba(245,245,247,0.45)">Named mentor</text>
+  <!-- Branding -->
+  <text x="1120" y="580" font-family="-apple-system,'SF Pro Display','Helvetica Neue',sans-serif" font-size="15" font-weight="700" text-anchor="end" fill="rgba(245,245,247,0.25)" letter-spacing="0.5">Magenta Networks</text>
+  <text x="1120" y="600" font-family="-apple-system,'SF Pro Display','Helvetica Neue',sans-serif" font-size="13" font-weight="400" text-anchor="end" fill="rgba(245,245,247,0.15)">mgnnetworks.com</text>
+  <!-- Decorative circles -->
+  <circle cx="980" cy="315" r="190" fill="none" stroke="rgba(230,12,210,0.07)" stroke-width="1"/>
+  <circle cx="980" cy="315" r="130" fill="none" stroke="rgba(230,12,210,0.06)" stroke-width="1"/>
+  <circle cx="980" cy="315" r="70" fill="none" stroke="rgba(230,12,210,0.1)" stroke-width="1"/>
+  <circle cx="980" cy="315" r="4" fill="rgba(230,12,210,0.5)"/>
+</svg>
