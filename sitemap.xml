@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- ===== HOMEPAGES ===== -->
+
   <url>
     <loc>https://mgnnetworks.com/en/</loc>
     <lastmod>2026-09-15</lastmod>
@@ -31,22 +33,234 @@
   </url>
 
   <url>
-    <loc>https://mgnnetworks.com/en/fellowship.html</loc>
+    <loc>https://mgnnetworks.com/ar/</loc>
     <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/tr/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/cn/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/fr/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/"/>
+  </url>
+
+  <!-- ===== FELLOWSHIP PAGES ===== -->
+
+  <url>
+    <loc>https://mgnnetworks.com/en/fellowship.html</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/fellowship.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/fellowship.html"/>
   </url>
 
   <url>
+    <loc>https://mgnnetworks.com/es/fellowship.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/fellowship.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/ar/fellowship.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/fellowship.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/tr/fellowship.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/fellowship.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/cn/fellowship.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/fellowship.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/fr/fellowship.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/fellowship.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/fellowship.html"/>
+  </url>
+
+  <!-- ===== APPLY PAGES ===== -->
+
+  <url>
     <loc>https://mgnnetworks.com/en/apply.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/apply.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/apply.html"/>
   </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/es/apply.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/apply.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/ar/apply.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/apply.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/tr/apply.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/apply.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/cn/apply.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/apply.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/fr/apply.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/apply.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/apply.html"/>
+  </url>
+
+  <!-- ===== INSIGHTS ===== -->
 
   <url>
     <loc>https://mgnnetworks.com/en/insights/</loc>
@@ -74,6 +288,8 @@
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
   </url>
+
+  <!-- ===== UTILITY ===== -->
 
   <url>
     <loc>https://mgnnetworks.com/en/privacy.html</loc>
