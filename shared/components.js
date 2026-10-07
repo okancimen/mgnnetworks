@@ -21,18 +21,21 @@
   const inLangSub  = LANGS.some(l => parts.includes(l));
   const inOtherSub = OTHER_SUBS.some(s => parts.includes(s));
   const inSub      = inLangSub || inOtherSub;
-  const base       = inSub ? '../' : './';
+  const depth      = inLangSub && inOtherSub ? 2 : (inSub ? 1 : 0);
+  const base       = depth === 2 ? '../../' : (depth === 1 ? '../' : './');
   const lastSeg    = parts[parts.length - 1] || '';
   const isIndex    = !inOtherSub && (lastSeg === '' || lastSeg === 'index.html' || LANGS.includes(lastSeg));
   const pageFile   = isIndex ? '' : lastSeg;
+  const otherSub   = OTHER_SUBS.find(s => parts.includes(s)) || '';
+  const langTarget = inOtherSub ? `${otherSub}/` : pageFile;
 
-  const homeHref    = isIndex ? '#hero' : (inOtherSub ? `${base}en/index.html` : 'index.html');
+  const homeHref    = isIndex ? '#hero' : (depth === 2 ? '../' : (inOtherSub ? `${base}en/index.html` : 'index.html'));
   const privacyHref = inOtherSub ? `${base}en/privacy.html` : 'privacy.html';
 
   // ── Language dropdown ─────────────────────────────────────────────────────
   function langDropdownHTML() {
     const items = LANGS.map(l => {
-      const href     = `${base}${l}/${pageFile}`;
+      const href     = `${base}${l}/${langTarget}`;
       const active   = l === lang ? ' lang-dd-active' : '';
       return `<a href="${href}" class="lang-dd-item${active}">${FLAGS[l]} ${NAMES[l]}</a>`;
     }).join('');
@@ -50,7 +53,7 @@
   // ── Mobile lang row ───────────────────────────────────────────────────────
   function mobileLangHTML() {
     return LANGS.map(l => {
-      const href   = `${base}${l}/${pageFile}`;
+      const href   = `${base}${l}/${langTarget}`;
       const active = l === lang ? ' ml-active' : '';
       return `<a href="${href}" class="ml-item${active}">${FLAGS[l]} ${l.toUpperCase()}</a>`;
     }).join('');
