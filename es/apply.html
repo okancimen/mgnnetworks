@@ -501,6 +501,19 @@
 <div id="mgn-footer"></div>
 
 <script>
+  // fire form_start once on first interaction
+  (function () {
+    const form = document.querySelector('form[name="fellowship-application"]');
+    if (!form) return;
+    let started = false;
+    form.addEventListener('input', function onInput() {
+      if (started) return;
+      started = true;
+      gtag('event', 'form_start', { event_category: 'Apply', event_label: 'fellowship_application' });
+      form.removeEventListener('input', onInput);
+    }, { once: false });
+  })();
+
   function handleSubmit(e) {
     e.preventDefault();
     const form  = e.target;
@@ -513,19 +526,48 @@
     const payload = {};
     new FormData(form).forEach((v, k) => payload[k] = v);
 
-    fetch('/.netlify/functions/send-application', {
+    payload.access_key = '72c44e04-6112-4ede-8fa1-2d9661f5e77b';
+    payload.subject    = `New Fellowship Application — ${payload.first_name} ${payload.last_name} (${payload.programme})`;
+    payload.from_name  = 'Magenta Networks Apply Form';
+
+
+    // GA4: user clicked submit
+    gtag('event', 'form_submit', {
+      event_category: 'Apply',
+      event_label: 'fellowship_application',
+      programme: payload.programme || '',
+      department: payload.department || '',
+      start_month: payload.start_month || '',
+    });
+
+    fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
     })
-    .then(res => res.ok ? res.json() : res.json().then(d => Promise.reject(d)))
+    .then(res => res.json())
+    .then(data => { if (!data.success) throw new Error(data.message); return data; })
     .then(() => {
+      // GA4: submission succeeded
+      gtag('event', 'form_complete', {
+        event_category: 'Apply',
+        event_label: 'fellowship_application',
+        programme: payload.programme || '',
+        department: payload.department || '',
+        start_month: payload.start_month || '',
+      });
       btn.textContent = 'Solicitud recibida ✓';
       btn.style.background = '#1d1d1f';
       form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
       if (legal) legal.innerHTML = 'Gracias. Revisamos cada solicitud personalmente y respondemos en 5 días hábiles.';
     })
     .catch(err => {
+      // GA4: submission failed
+      gtag('event', 'form_error', {
+        event_category: 'Apply',
+        event_label: 'fellowship_application',
+        error_message: err.message || 'unknown',
+      });
       btn.textContent = 'Enviar solicitud →';
       btn.disabled = false;
       let errEl = form.querySelector('.form-error');
