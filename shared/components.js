@@ -15,6 +15,17 @@
   const FLAGS = { en: '🇬🇧', es: '🇪🇸', ar: '🇸🇦', tr: '🇹🇷', cn: '🇨🇳', fr: '🇫🇷' };
   const NAMES = { en: 'English', es: 'Español', ar: 'العربية', tr: 'Türkçe', cn: '中文', fr: 'Français' };
 
+  const T = {
+    whatWeDo:    { en: 'What We Do',   es: 'Qué Hacemos',    fr: 'Ce Que Nous Faisons', tr: 'Ne Yapıyoruz',    cn: '我们的业务',   ar: 'ما نفعله'       },
+    howItWorks:  { en: 'How It Works', es: 'Cómo Funciona',  fr: 'Comment ça Marche',   tr: 'Nasıl Çalışır',   cn: '如何运作',     ar: 'كيف يعمل'       },
+    compare:     { en: 'Compare',      es: 'Comparar',       fr: 'Comparer',             tr: 'Karşılaştır',     cn: '比较',         ar: 'مقارنة'         },
+    leadership:  { en: 'Leadership',   es: 'Liderazgo',      fr: 'Direction',            tr: 'Liderlik',        cn: '领导团队',     ar: 'القيادة'        },
+    insights:    { en: 'Insights',     es: 'Perspectivas',   fr: 'Analyses',             tr: 'Görüşler',        cn: '洞察',         ar: 'رؤى'            },
+    getInTouch:  { en: 'Get in touch', es: 'Contáctanos',    fr: 'Nous contacter',       tr: 'İletişim',        cn: '联系我们',     ar: 'تواصل معنا'     },
+    apply:       { en: 'Apply for Fellowship →', es: 'Solicitar Fellowship →', fr: 'Candidater au Fellowship →', tr: "Fellowship'e Başvur →", cn: '申请奖学金 →', ar: 'التقدم للزمالة →' },
+  };
+  function t(key) { return (T[key] && T[key][lang]) || T[key]['en']; }
+
   // ── Detect context from URL ───────────────────────────────────────────────
   const CONTENT_SUBS = ['insights', 'blog'];
 
@@ -80,15 +91,15 @@
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="#what">What We Do</a></li>
+    <li><a href="#what">${t('whatWeDo')}</a></li>
     <li><a href="#portfolio-edu">Portfolio</a></li>
     <li><a href="fellowship.html">Fellowship</a></li>
-    <li><a href="fellowship.html#how">How It Works</a></li>
+    <li><a href="fellowship.html#how">${t('howItWorks')}</a></li>
     <li><a href="fellowship.html#faq">FAQ</a></li>
-    <li><a href="fellowship.html#compare">Compare</a></li>
-    <li><a href="#leadership">Leadership</a></li>
-    <li><a href="insights/index.html">Insights</a></li>
-    <li><a href="#contact" class="nav-apply">Get in touch</a></li>
+    <li><a href="fellowship.html#compare">${t('compare')}</a></li>
+    <li><a href="#leadership">${t('leadership')}</a></li>
+    <li><a href="insights/index.html">${t('insights')}</a></li>
+    <li><a href="#contact" class="nav-apply">${t('getInTouch')}</a></li>
   </ul>
   ${langDropdownHTML()}
   <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
@@ -97,15 +108,15 @@
 </nav>
 
 <div id="mobile-menu" role="dialog" aria-label="Navigation">
-  <a href="#what"           class="mobile-link">What We Do</a>
+  <a href="#what"           class="mobile-link">${t('whatWeDo')}</a>
   <a href="#portfolio-edu"  class="mobile-link">Portfolio</a>
   <a href="fellowship.html" class="mobile-link">Fellowship</a>
-  <a href="fellowship.html#how" class="mobile-link">How It Works</a>
+  <a href="fellowship.html#how" class="mobile-link">${t('howItWorks')}</a>
   <a href="fellowship.html#faq" class="mobile-link">FAQ</a>
-  <a href="fellowship.html#compare" class="mobile-link">Compare</a>
-  <a href="#leadership"     class="mobile-link">Leadership</a>
-  <a href="insights/index.html" class="mobile-link">Insights</a>
-  <a href="apply.html"      class="mobile-link apply">Apply for Fellowship →</a>
+  <a href="fellowship.html#compare" class="mobile-link">${t('compare')}</a>
+  <a href="#leadership"     class="mobile-link">${t('leadership')}</a>
+  <a href="insights/index.html" class="mobile-link">${t('insights')}</a>
+  <a href="apply.html"      class="mobile-link apply">${t('apply')}</a>
   <div class="mobile-lang">${mobileLangHTML()}</div>
   <span class="mobile-menu-footer">Magenta Networks Pte Ltd · Singapore</span>
 </div>`;
@@ -122,15 +133,15 @@
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="${h}#what">What We Do</a></li>
+    <li><a href="${h}#what">${t('whatWeDo')}</a></li>
     <li><a href="${h}#portfolio-edu">Portfolio</a></li>
     <li><a href="${lp}fellowship.html">Fellowship</a></li>
-    <li><a href="${lp}fellowship.html#how">How It Works</a></li>
+    <li><a href="${lp}fellowship.html#how">${t('howItWorks')}</a></li>
     <li><a href="${lp}fellowship.html#faq">FAQ</a></li>
-    <li><a href="${lp}fellowship.html#compare">Compare</a></li>
-    <li><a href="${h}#leadership">Leadership</a></li>
-    <li><a href="${lp}insights/index.html">Insights</a></li>
-    <li><a href="${h}#contact" class="nav-apply">Get in touch</a></li>
+    <li><a href="${lp}fellowship.html#compare">${t('compare')}</a></li>
+    <li><a href="${h}#leadership">${t('leadership')}</a></li>
+    <li><a href="${lp}insights/index.html">${t('insights')}</a></li>
+    <li><a href="${h}#contact" class="nav-apply">${t('getInTouch')}</a></li>
   </ul>
   ${langDropdownHTML()}
   <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
@@ -139,15 +150,15 @@
 </nav>
 
 <div id="mobile-menu" role="dialog" aria-label="Navigation">
-  <a href="${h}#what"          class="mobile-link">What We Do</a>
+  <a href="${h}#what"          class="mobile-link">${t('whatWeDo')}</a>
   <a href="${h}#portfolio-edu" class="mobile-link">Portfolio</a>
   <a href="${lp}fellowship.html"    class="mobile-link">Fellowship</a>
-  <a href="${lp}fellowship.html#how" class="mobile-link">How It Works</a>
+  <a href="${lp}fellowship.html#how" class="mobile-link">${t('howItWorks')}</a>
   <a href="${lp}fellowship.html#faq" class="mobile-link">FAQ</a>
-  <a href="${lp}fellowship.html#compare" class="mobile-link">Compare</a>
-  <a href="${h}#leadership"    class="mobile-link">Leadership</a>
-  <a href="${lp}insights/index.html" class="mobile-link">Insights</a>
-  <a href="${lp}apply.html"         class="mobile-link apply">Apply for Fellowship →</a>
+  <a href="${lp}fellowship.html#compare" class="mobile-link">${t('compare')}</a>
+  <a href="${h}#leadership"    class="mobile-link">${t('leadership')}</a>
+  <a href="${lp}insights/index.html" class="mobile-link">${t('insights')}</a>
+  <a href="${lp}apply.html"         class="mobile-link apply">${t('apply')}</a>
   <div class="mobile-lang">${mobileLangHTML()}</div>
   <span class="mobile-menu-footer">Magenta Networks Pte Ltd · Singapore</span>
 </div>`;
