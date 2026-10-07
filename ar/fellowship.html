@@ -20,7 +20,7 @@
   </script>
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <link rel="icon" type="image/png" href="/logo.png" />
-  <link rel="preload" as="image" href="/logo.png" />
+  <link rel="preload" as="image" href="/logo.svg" type="image/svg+xml" />
   <title>Global Career Fellowship | خبرة عملية للطلاب من 14 إلى 22 عاماً | Magenta Networks</title>
   <meta name="description" content="اعمل داخل شركات حقيقية بوصفك مستشاراً مبتدئاً، للأعمار من 14 إلى 22 عاماً. تخرّج برسالة توصية موثّقة موقّعة من المدير العام. عن بُعد وبشكل غير متزامن." />
   <meta name="robots" content="index, follow" />
@@ -88,7 +88,8 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"></noscript>
   <style>
     :root {
       --ink:      #1d1d1f;
@@ -854,6 +855,7 @@
 <body>
 
 <div id="mgn-nav"></div>
+<main>
 
 <!-- FELLOWSHIP -->
 <section id="fellowship">
@@ -1376,6 +1378,7 @@
 </section>
 
 <!-- FOOTER (injected by shared/components.js) -->
+</main>
 <div id="mgn-footer"></div>
 
 <script type="application/ld+json">
@@ -1483,7 +1486,7 @@
 }
 </script>
 
-<script src="../shared/components.js?v=2"></script>
+<script src="../shared/components.js?v=3"></script>
 <script>
   // FAQ accordion
   document.querySelectorAll('.faq-q').forEach(btn => {

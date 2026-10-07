@@ -20,7 +20,7 @@
   </script>
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <link rel="icon" type="image/png" href="/logo.png" />
-  <link rel="preload" as="image" href="/logo.png" />
+  <link rel="preload" as="image" href="/logo.svg" type="image/svg+xml" />
   <title>Magenta Networks — Teknoloji ve Yetenek Grubu | Singapur</title>
   <meta name="description" content="Singapur merkezli teknoloji grubu; platformlar geliştiriyor, kıdemli danışmanları küresel ölçekte yerleştiriyor ve Global Career Fellowship aracılığıyla öğrenci yeteneklerini geliştiriyor." />
   <meta name="robots" content="index, follow" />
@@ -84,7 +84,8 @@
   <link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"></noscript>
   <style>
     :root {
       --ink:      #1d1d1f;
@@ -292,6 +293,7 @@
 
 <div class="color-bar"></div>
 <div id="mgn-nav"></div>
+<main>
 
 <section id="hero">
   <div class="hero-glow"></div>
@@ -299,7 +301,7 @@
     <img src="../logo.png" alt="Magenta Networks" />
   </div>
   <p class="hero-eyebrow reveal reveal-delay-1">Singapur · Teknoloji Grubu</p>
-  <h1 class="reveal reveal-delay-2">Teknolojiyi İnşa Ediyoruz.<br /><span class="grad-text">Arkasındaki Yeteneği</span><br />Yerleştiriyoruz.</h1>
+  <h1 class="reveal reveal-delay-2 visible">Teknolojiyi İnşa Ediyoruz.<br /><span class="grad-text">Arkasındaki Yeteneği</span><br />Yerleştiriyoruz.</h1>
   <p class="sub reveal reveal-delay-3">Magenta Networks, eğitim ve sağlıkta teknoloji platformları geliştiriyor; kıdemli yönetim danışmanlarını ve teknoloji profesyonellerini küresel ölçekte konuşlandırıyor; Global Career Fellowship aracılığıyla yeni nesil yetenekleri yetiştiriyor.</p>
   <div class="hero-btns reveal reveal-delay-4">
     <a href="#portfolio-edu" class="pill pill-blue">Portföyü Gör</a>
@@ -496,8 +498,9 @@
   <p class="verify-note reveal reveal-delay-4">Ya da mektuptaki QR kodu doğrudan telefonunuzdan tarayın.</p>
 </section>
 
+</main>
 <div id="mgn-footer"></div>
-<script src="../shared/components.js?v=2"></script>
+<script src="../shared/components.js?v=3"></script>
 <script>
   const reveals = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {

@@ -20,8 +20,9 @@
   </script>
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <link rel="icon" type="image/png" href="/logo.png" />
-  <link rel="preload" as="image" href="/logo.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/logo.svg" type="image/svg+xml" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&display=swap"></noscript>
   <title>什么是实习？学生如何获得实习机会？</title>
   <meta name="description" content="实习全解析——它们是什么、与奖学金项目有何不同，以及作为没有经验的学生如何获得第一份实习的实用步骤。" />
   <meta name="robots" content="index, follow" />
@@ -230,6 +231,7 @@
 <body>
 
 <div id="mgn-nav"></div>
+<main>
 
 <div class="article-hero">
   <div class="article-breadcrumb">
@@ -465,9 +467,10 @@
 
 </div>
 
+</main>
 <div id="mgn-footer"></div>
 
-<script src="../../shared/components.js?v=2"></script>
+<script src="../../shared/components.js?v=3"></script>
 <script>
   document.querySelectorAll('.faq-q').forEach(btn => {
     btn.addEventListener('click', () => {

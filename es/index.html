@@ -20,7 +20,7 @@
   </script>
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <link rel="icon" type="image/png" href="/logo.png" />
-  <link rel="preload" as="image" href="/logo.png" />
+  <link rel="preload" as="image" href="/logo.svg" type="image/svg+xml" />
   <title>Magenta Networks — Grupo Tecnológico | Singapur</title>
   <meta name="description" content="Grupo tecnológico de Singapur que construye plataformas, despliega consultores senior a nivel global y desarrolla talento estudiantil a través de la Global Career Fellowship." />
   <meta name="robots" content="index, follow" />
@@ -84,7 +84,8 @@
   <link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"></noscript>
   <style>
     :root {
       --ink:      #1d1d1f;
@@ -1181,6 +1182,7 @@
 
 <!-- NAV (injected by shared/components.js) -->
 <div id="mgn-nav"></div>
+<main>
 
 <!-- HERO -->
 <section id="hero">
@@ -1189,7 +1191,7 @@
     <img src="../logo.png" alt="Magenta Networks" />
   </div>
   <p class="hero-eyebrow reveal reveal-delay-1">Singapur · Grupo Tecnológico</p>
-  <h1 class="reveal reveal-delay-2">Construimos Tecnología.<br /><span class="grad-text">Colocamos el Talento</span><br />detrás de ella.</h1>
+  <h1 class="reveal reveal-delay-2 visible">Construimos Tecnología.<br /><span class="grad-text">Colocamos el Talento</span><br />detrás de ella.</h1>
   <p class="sub reveal reveal-delay-3">Magenta Networks desarrolla plataformas tecnológicas en educación y salud, despliega consultores directivos y profesionales tecnológicos a nivel global, y forma la próxima generación de talento a través de la Global Career Fellowship.</p>
   <div class="hero-btns reveal reveal-delay-4">
     <a href="#portfolio-edu" class="pill pill-blue">Ver Portafolio</a>
@@ -1465,9 +1467,10 @@
 </section>
 
 <!-- FOOTER (injected by shared/components.js) -->
+</main>
 <div id="mgn-footer"></div>
 
-<script src="../shared/components.js?v=2"></script>
+<script src="../shared/components.js?v=3"></script>
 
 <script>
   // FAQ accordion
