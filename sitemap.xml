@@ -260,16 +260,93 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/apply.html"/>
   </url>
 
-  <!-- ===== INSIGHTS ===== -->
+  <!-- ===== INSIGHTS INDEX ===== -->
 
   <url>
     <loc>https://mgnnetworks.com/en/insights/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/"/>
   </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/es/insights/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/fr/insights/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/tr/insights/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/cn/insights/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/ar/insights/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/"/>
+  </url>
+
+  <!-- ===== INSIGHTS: HOW TO GET WORK EXPERIENCE ===== -->
 
   <url>
     <loc>https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html</loc>
@@ -277,8 +354,85 @@
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-get-work-experience-as-a-student.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
   </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/es/insights/how-to-get-work-experience-as-a-student.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/fr/insights/how-to-get-work-experience-as-a-student.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/tr/insights/how-to-get-work-experience-as-a-student.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/cn/insights/how-to-get-work-experience-as-a-student.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/ar/insights/how-to-get-work-experience-as-a-student.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-get-work-experience-as-a-student.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
+  </url>
+
+  <!-- ===== INSIGHTS: 10 BENEFITS ===== -->
 
   <url>
     <loc>https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html</loc>
@@ -286,6 +440,81 @@
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/es/insights/10-benefits-of-part-time-work-for-students.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/fr/insights/10-benefits-of-part-time-work-for-students.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/tr/insights/10-benefits-of-part-time-work-for-students.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/cn/insights/10-benefits-of-part-time-work-for-students.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/ar/insights/10-benefits-of-part-time-work-for-students.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/10-benefits-of-part-time-work-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/10-benefits-of-part-time-work-for-students.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
   </url>
 
