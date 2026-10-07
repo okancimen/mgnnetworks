@@ -16,21 +16,32 @@
   const NAMES = { en: 'English', es: 'Español', ar: 'العربية', tr: 'Türkçe', cn: '中文', fr: 'Français' };
 
   // ── Detect context from URL ───────────────────────────────────────────────
-  const parts      = location.pathname.replace(/\/+$/, '').split('/').filter(Boolean);
-  const lang       = LANGS.find(l => parts.includes(l)) || 'en';
-  const inLangSub  = LANGS.some(l => parts.includes(l));
-  const inOtherSub = OTHER_SUBS.some(s => parts.includes(s));
-  const inSub      = inLangSub || inOtherSub;
-  const depth      = inLangSub && inOtherSub ? 2 : (inSub ? 1 : 0);
-  const base       = depth === 2 ? '../../' : (depth === 1 ? '../' : './');
-  const lastSeg    = parts[parts.length - 1] || '';
-  const isIndex    = !inOtherSub && (lastSeg === '' || lastSeg === 'index.html' || LANGS.includes(lastSeg));
-  const pageFile   = isIndex ? '' : lastSeg;
-  const otherSub   = OTHER_SUBS.find(s => parts.includes(s)) || '';
-  const langTarget = inOtherSub ? `${otherSub}/` : pageFile;
+  const CONTENT_SUBS = ['insights', 'blog'];
+
+  const parts        = location.pathname.replace(/\/+$/, '').split('/').filter(Boolean);
+  const lang         = LANGS.find(l => parts.includes(l)) || 'en';
+  const inLangSub    = LANGS.some(l => parts.includes(l));
+  const inOtherSub   = OTHER_SUBS.some(s => parts.includes(s));
+  const inContentSub = CONTENT_SUBS.some(s => parts.includes(s));
+  const contentSub   = CONTENT_SUBS.find(s => parts.includes(s)) || '';
+  const inSub        = inLangSub || inOtherSub || inContentSub;
+  const depth        = (inLangSub && (inOtherSub || inContentSub)) ? 2 : (inSub ? 1 : 0);
+  const base         = depth === 2 ? '../../' : (depth === 1 ? '../' : './');
+  const lastSeg      = parts[parts.length - 1] || '';
+  const isIndex      = !inOtherSub && !inContentSub && (lastSeg === '' || lastSeg === 'index.html' || LANGS.includes(lastSeg));
+  const isContentIdx = inContentSub && (lastSeg === contentSub || lastSeg === 'index.html');
+  const pageFile     = (isIndex || isContentIdx) ? '' : lastSeg;
+  const otherSub     = OTHER_SUBS.find(s => parts.includes(s)) || '';
+  const langTarget   = inOtherSub   ? `${otherSub}/`
+                     : inContentSub ? `${contentSub}/${pageFile}`
+                     : pageFile;
+  // prefix for locale-level links when inside a content subfolder (e.g. insights/)
+  const lp           = (depth === 2 && inContentSub) ? '../' : '';
 
   const homeHref    = isIndex ? '#hero' : (depth === 2 ? '../' : (inOtherSub ? `${base}en/index.html` : 'index.html'));
-  const privacyHref = inOtherSub ? `${base}en/privacy.html` : 'privacy.html';
+  const privacyHref = inOtherSub    ? `${base}en/privacy.html`
+                    : depth === 2   ? '../privacy.html'
+                    : 'privacy.html';
 
   // ── Language dropdown ─────────────────────────────────────────────────────
   function langDropdownHTML() {
@@ -113,12 +124,12 @@
   <ul class="nav-links">
     <li><a href="${h}#what">What We Do</a></li>
     <li><a href="${h}#portfolio-edu">Portfolio</a></li>
-    <li><a href="fellowship.html">Fellowship</a></li>
-    <li><a href="fellowship.html#how">How It Works</a></li>
-    <li><a href="fellowship.html#faq">FAQ</a></li>
-    <li><a href="fellowship.html#compare">Compare</a></li>
+    <li><a href="${lp}fellowship.html">Fellowship</a></li>
+    <li><a href="${lp}fellowship.html#how">How It Works</a></li>
+    <li><a href="${lp}fellowship.html#faq">FAQ</a></li>
+    <li><a href="${lp}fellowship.html#compare">Compare</a></li>
     <li><a href="${h}#leadership">Leadership</a></li>
-    <li><a href="insights/index.html">Insights</a></li>
+    <li><a href="${lp}insights/index.html">Insights</a></li>
     <li><a href="${h}#contact" class="nav-apply">Get in touch</a></li>
   </ul>
   ${langDropdownHTML()}
@@ -130,13 +141,13 @@
 <div id="mobile-menu" role="dialog" aria-label="Navigation">
   <a href="${h}#what"          class="mobile-link">What We Do</a>
   <a href="${h}#portfolio-edu" class="mobile-link">Portfolio</a>
-  <a href="fellowship.html"    class="mobile-link">Fellowship</a>
-  <a href="fellowship.html#how" class="mobile-link">How It Works</a>
-  <a href="fellowship.html#faq" class="mobile-link">FAQ</a>
-  <a href="fellowship.html#compare" class="mobile-link">Compare</a>
+  <a href="${lp}fellowship.html"    class="mobile-link">Fellowship</a>
+  <a href="${lp}fellowship.html#how" class="mobile-link">How It Works</a>
+  <a href="${lp}fellowship.html#faq" class="mobile-link">FAQ</a>
+  <a href="${lp}fellowship.html#compare" class="mobile-link">Compare</a>
   <a href="${h}#leadership"    class="mobile-link">Leadership</a>
-  <a href="insights/index.html" class="mobile-link">Insights</a>
-  <a href="apply.html"         class="mobile-link apply">Apply for Fellowship →</a>
+  <a href="${lp}insights/index.html" class="mobile-link">Insights</a>
+  <a href="${lp}apply.html"         class="mobile-link apply">Apply for Fellowship →</a>
   <div class="mobile-lang">${mobileLangHTML()}</div>
   <span class="mobile-menu-footer">Magenta Networks Pte Ltd · Singapore</span>
 </div>`;
