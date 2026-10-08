@@ -50,8 +50,9 @@ async function main() {
     process.exit(1);
   }
 
+  const credentials = JSON.parse(fs.readFileSync(keyFile, 'utf8'));
   const auth = new GoogleAuth({
-    keyFile,
+    credentials,
     scopes: ['https://www.googleapis.com/auth/indexing'],
   });
   const client = await auth.getClient();

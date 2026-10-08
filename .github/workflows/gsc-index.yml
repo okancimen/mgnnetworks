@@ -1,0 +1,25 @@
+name: Submit URLs to Google Search Console
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: scripts
+
+      - name: Write service account key
+        run: echo '${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}' > scripts/gsc-service-account.json
+
+      - name: Submit URLs
+        run: node scripts/gsc-index.js
