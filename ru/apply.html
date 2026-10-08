@@ -520,7 +520,7 @@
     form.addEventListener('input', function onInput() {
       if (started) return;
       started = true;
-      gtag('event', 'form_start', { event_category: 'Apply', event_label: 'fellowship_application' });
+      gtag('event', 'form_start', { form_id: 'fellowship_application' });
       form.removeEventListener('input', onInput);
     }, { once: false });
   })();
@@ -545,8 +545,7 @@
 
     // GA4: user clicked submit
     gtag('event', 'form_submit', {
-      event_category: 'Apply',
-      event_label: 'fellowship_application',
+      form_id: 'fellowship_application',
       programme: payload.programme || '',
       department: payload.department || '',
       start_month: payload.start_month || '',
@@ -561,9 +560,8 @@
     .then(data => { if (!data.success) throw new Error(data.message); return data; })
     .then(() => {
       // GA4: submission succeeded
-      gtag('event', 'form_complete', {
-        event_category: 'Apply',
-        event_label: 'fellowship_application',
+      gtag('event', 'generate_lead', {
+        form_id: 'fellowship_application',
         programme: payload.programme || '',
         department: payload.department || '',
         start_month: payload.start_month || '',
@@ -576,8 +574,7 @@
     .catch(err => {
       // GA4: submission failed
       gtag('event', 'form_error', {
-        event_category: 'Apply',
-        event_label: 'fellowship_application',
+        form_id: 'fellowship_application',
         error_message: err.message || 'unknown',
       });
       btn.textContent = 'Отправить заявку →';
@@ -595,6 +592,6 @@
   }
 </script>
 
-<script src="../shared/components.js?v=3"></script>
+<script src="../shared/components.js?v=4"></script>
 </body>
 </html>

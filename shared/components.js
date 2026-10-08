@@ -305,6 +305,44 @@
     mobileMenu.querySelectorAll('.mobile-link').forEach(a => a.addEventListener('click', closeMenu));
   }
 
+  // ── CTA click tracking ───────────────────────────────────────────────────
+  (function trackCTAs() {
+    if (typeof gtag !== 'function') return;
+    const page = location.pathname;
+
+    // Determine the section context of a clicked link
+    function sectionOf(el) {
+      const p = el.closest('[id]');
+      return p ? p.id : 'unknown';
+    }
+
+    // Track every link that goes to apply.html
+    document.querySelectorAll('a[href*="apply.html"]').forEach(function(a) {
+      a.addEventListener('click', function() {
+        gtag('event', 'cta_click', {
+          destination: 'apply',
+          button_label: a.textContent.trim().substring(0, 60),
+          source_page: page,
+          source_section: sectionOf(a),
+        });
+      });
+    });
+
+    // Track links to fellowship.html (only from non-fellowship pages)
+    if (!page.includes('/fellowship')) {
+      document.querySelectorAll('a[href*="fellowship.html"]:not([href*="#"])').forEach(function(a) {
+        a.addEventListener('click', function() {
+          gtag('event', 'cta_click', {
+            destination: 'fellowship',
+            button_label: a.textContent.trim().substring(0, 60),
+            source_page: page,
+            source_section: sectionOf(a),
+          });
+        });
+      });
+    }
+  })();
+
   // ── Language dropdown toggle ──────────────────────────────────────────────
   const langDd  = document.getElementById('lang-dd');
   const langBtn = document.getElementById('lang-dd-btn');
