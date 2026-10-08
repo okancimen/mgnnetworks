@@ -8,21 +8,21 @@
   'use strict';
 
   // ── Language config ───────────────────────────────────────────────────────
-  const LANGS      = ['en', 'es', 'ar', 'tr', 'cn', 'fr'];
+  const LANGS      = ['en', 'es', 'ar', 'tr', 'cn', 'fr', 'ru'];
   const RTL        = ['ar'];
   const OTHER_SUBS = ['verify', 'letters'];
 
-  const FLAGS = { en: '🇬🇧', es: '🇪🇸', ar: '🇸🇦', tr: '🇹🇷', cn: '🇨🇳', fr: '🇫🇷' };
-  const NAMES = { en: 'English', es: 'Español', ar: 'العربية', tr: 'Türkçe', cn: '中文', fr: 'Français' };
+  const FLAGS = { en: '🇬🇧', es: '🇪🇸', ar: '🇸🇦', tr: '🇹🇷', cn: '🇨🇳', fr: '🇫🇷', ru: '🇷🇺' };
+  const NAMES = { en: 'English', es: 'Español', ar: 'العربية', tr: 'Türkçe', cn: '中文', fr: 'Français', ru: 'Русский' };
 
   const T = {
-    whatWeDo:    { en: 'What We Do',   es: 'Qué Hacemos',    fr: 'Ce Que Nous Faisons', tr: 'Ne Yapıyoruz',    cn: '我们的业务',   ar: 'ما نفعله'       },
-    howItWorks:  { en: 'How It Works', es: 'Cómo Funciona',  fr: 'Comment ça Marche',   tr: 'Nasıl Çalışır',   cn: '如何运作',     ar: 'كيف يعمل'       },
-    compare:     { en: 'Compare',      es: 'Comparar',       fr: 'Comparer',             tr: 'Karşılaştır',     cn: '比较',         ar: 'مقارنة'         },
-    leadership:  { en: 'Leadership',   es: 'Liderazgo',      fr: 'Direction',            tr: 'Liderlik',        cn: '领导团队',     ar: 'القيادة'        },
-    insights:    { en: 'Insights',     es: 'Perspectivas',   fr: 'Analyses',             tr: 'Görüşler',        cn: '洞察',         ar: 'رؤى'            },
-    getInTouch:  { en: 'Get in touch', es: 'Contáctanos',    fr: 'Nous contacter',       tr: 'İletişim',        cn: '联系我们',     ar: 'تواصل معنا'     },
-    apply:       { en: 'Apply for Fellowship →', es: 'Solicitar Fellowship →', fr: 'Candidater au Fellowship →', tr: "Fellowship'e Başvur →", cn: '申请奖学金 →', ar: 'التقدم للزمالة →' },
+    whatWeDo:    { en: 'What We Do',   es: 'Qué Hacemos',    fr: 'Ce Que Nous Faisons', tr: 'Ne Yapıyoruz',    cn: '我们的业务',   ar: 'ما نفعله',        ru: 'Чем мы занимаемся' },
+    howItWorks:  { en: 'How It Works', es: 'Cómo Funciona',  fr: 'Comment ça Marche',   tr: 'Nasıl Çalışır',   cn: '如何运作',     ar: 'كيف يعمل',        ru: 'Как это работает'  },
+    compare:     { en: 'Compare',      es: 'Comparar',       fr: 'Comparer',             tr: 'Karşılaştır',     cn: '比较',         ar: 'مقارنة',          ru: 'Сравнить'          },
+    leadership:  { en: 'Leadership',   es: 'Liderazgo',      fr: 'Direction',            tr: 'Liderlik',        cn: '领导团队',     ar: 'القيادة',         ru: 'Руководство'       },
+    insights:    { en: 'Insights',     es: 'Perspectivas',   fr: 'Analyses',             tr: 'Görüşler',        cn: '洞察',         ar: 'رؤى',             ru: 'Аналитика'         },
+    getInTouch:  { en: 'Get in touch', es: 'Contáctanos',    fr: 'Nous contacter',       tr: 'İletişim',        cn: '联系我们',     ar: 'تواصل معنا',      ru: 'Связаться'         },
+    apply:       { en: 'Apply for Fellowship →', es: 'Solicitar Fellowship →', fr: 'Candidater au Fellowship →', tr: "Fellowship'e Başvur →", cn: '申请奖学金 →', ar: 'التقدم للزمالة →', ru: 'Подать заявку →' },
   };
   function t(key) { return (T[key] && T[key][lang]) || T[key]['en']; }
 
