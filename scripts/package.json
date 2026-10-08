@@ -1,0 +1,13 @@
+{
+  "name": "mgnnetworks-scripts",
+  "private": true,
+  "scripts": {
+    "index": "node gsc-index.js",
+    "index:ru": "node gsc-index.js --locale=ru",
+    "index:en": "node gsc-index.js --locale=en",
+    "dry-run": "node gsc-index.js --dry-run"
+  },
+  "dependencies": {
+    "google-auth-library": "^9.0.0"
+  }
+}
