@@ -10,6 +10,7 @@
 - Address: 100 Tras Street, #16-01AM, 100AM, Singapore 079027
 - Managing Director: Okan Cimen (verifiable on LinkedIn)
 - Website: https://mgnnetworks.com
+- Languages: English, Español, Français, Türkçe, 中文, العربية, Русский (7 locales — en, es, fr, tr, cn, ar, ru)
 
 ## Pages
 
@@ -17,6 +18,7 @@
 - [Fellowship](https://mgnnetworks.com/en/fellowship.html): Full details of the Global Career Fellowship — department tracks, what fellows gain, how the programme works, pricing, comparison with alternatives, school partnerships, and FAQ
 - [Apply](https://mgnnetworks.com/en/apply.html): Application form for the Global Career Fellowship
 - [Verify a letter](https://mgnnetworks.com/verify/): Verification portal for reference letters issued by Magenta Networks — enter a reference number to confirm authenticity
+- [Insights](https://mgnnetworks.com/en/insights/): Articles on early careers, work experience, and student employment — available in all 7 languages
 
 ## Global Career Fellowship — key facts
 
