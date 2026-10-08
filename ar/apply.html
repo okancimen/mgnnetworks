@@ -351,7 +351,47 @@
     .apply-hero { text-align: center; }
 
     .mobile-link:hover { transform: translateX(-6px); }
-  </style>
+  
+    /* ── 2-step wizard ── */
+    .step-indicator {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--mag);
+      margin-bottom: 32px;
+    }
+    .step-nav {
+      margin-top: 32px;
+      text-align: end;
+    }
+    .btn-next {
+      background: var(--mag);
+      color: #fff;
+      border: none;
+      border-radius: 980px;
+      padding: 14px 32px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity .15s;
+    }
+    .btn-next:hover { opacity: .85; }
+    .btn-back {
+      display: block;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,.15);
+      color: rgba(255,255,255,.55);
+      border-radius: 980px;
+      padding: 10px 22px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: opacity .15s;
+    }
+    .btn-back:hover { opacity: .7; }
+    </style>
 </head>
 <body>
 
@@ -386,6 +426,10 @@
 
 <div class="form-wrap">
   <form name="fellowship-application" onsubmit="handleSubmit(event)">
+
+    <div class="step-indicator"><span id="step-text">الخطوة 1 من 2</span></div>
+
+    <div id="step-1" class="form-step">
 
     <div class="workload-note">
       <strong>عبء العمل.</strong> يعمل الزملاء بشكل غير متزامن — بلا ساعات عمل ثابتة، وبلا جلسات مباشرة. توقع قضاء 8 إلى 10 ساعات أسبوعياً في إنجاز المهام. يُوقف العمل تلقائياً خلال فترات الامتحانات؛ فقط أخبرنا مسبقاً.
@@ -438,6 +482,12 @@
       <p class="field-hint">نرسل جميع مراسلات البرنامج إلى كلا العنوانين.</p>
     </div>
 
+
+    <div class="step-nav"><button type="button" class="btn-next" onclick="nextStep()">التالي</button></div>
+
+    </div>
+
+    <div id="step-2" class="form-step" style="display:none">
     <div class="form-section-label">الزمالة</div>
 
     <div class="field">
@@ -499,11 +549,14 @@
     </div>
 
     <div class="form-submit">
+      <button type="button" class="btn-back" onclick="prevStep()">رجوع</button>
       <button type="submit" class="btn-submit">← إرسال الطلب</button>
       <p class="form-legal">
         بالإرسال، توافق على <a href="privacy.html">سياسة الخصوصية والشروط</a>.<br />
         لن نشارك معلوماتك أبداً مع أطراف ثالثة.
       </p>
+    </div>
+
     </div>
 
   </form>
@@ -629,5 +682,28 @@
 </script>
 
 <script src="../shared/components.js?v=4"></script>
+  <script>
+    function nextStep() {
+      var s1 = document.getElementById('step-1');
+      var ok = true;
+      s1.querySelectorAll('[required]').forEach(function(el) {
+        var empty = !el.value || !el.value.trim();
+        el.style.borderColor = empty ? 'var(--mag)' : '';
+        el.style.boxShadow   = empty ? '0 0 0 3px rgba(230,12,210,.18)' : '';
+        if (empty) ok = false;
+      });
+      if (!ok) return;
+      s1.style.display = 'none';
+      document.getElementById('step-2').style.display = 'block';
+      document.getElementById('step-text').textContent = 'الخطوة 2 من 2';
+      window.scrollTo({top: document.querySelector('.form-wrap').offsetTop - 20, behavior: 'smooth'});
+    }
+    function prevStep() {
+      document.getElementById('step-2').style.display = 'none';
+      document.getElementById('step-1').style.display = 'block';
+      document.getElementById('step-text').textContent = 'الخطوة 1 من 2';
+      window.scrollTo({top: document.querySelector('.form-wrap').offsetTop - 20, behavior: 'smooth'});
+    }
+  </script>
 </body>
 </html>

@@ -315,7 +315,47 @@
       .field-row { grid-template-columns: 1fr; }
       .apply-hero { padding: 100px 20px 60px; }
     }
-  </style>
+  
+    /* ── 2-step wizard ── */
+    .step-indicator {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--mag);
+      margin-bottom: 32px;
+    }
+    .step-nav {
+      margin-top: 32px;
+      text-align: end;
+    }
+    .btn-next {
+      background: var(--mag);
+      color: #fff;
+      border: none;
+      border-radius: 980px;
+      padding: 14px 32px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity .15s;
+    }
+    .btn-next:hover { opacity: .85; }
+    .btn-back {
+      display: block;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,.15);
+      color: rgba(255,255,255,.55);
+      border-radius: 980px;
+      padding: 10px 22px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: opacity .15s;
+    }
+    .btn-back:hover { opacity: .7; }
+    </style>
 </head>
 <body>
 
@@ -350,6 +390,10 @@
 
 <div class="form-wrap">
   <form name="fellowship-application" onsubmit="handleSubmit(event)">
+
+    <div class="step-indicator"><span id="step-text">Step 1 of 2</span></div>
+
+    <div id="step-1" class="form-step">
 
     <div class="workload-note">
       <strong>Workload.</strong> Fellows work asynchronously — no fixed hours, no live sessions. Expect to spend 8–10 hours per week on deliverables. All work pauses automatically during exam periods; just let us know in advance.
@@ -402,6 +446,12 @@
       <p class="field-hint">We send all programme communications to both addresses.</p>
     </div>
 
+
+    <div class="step-nav"><button type="button" class="btn-next" onclick="nextStep()">Next →</button></div>
+
+    </div>
+
+    <div id="step-2" class="form-step" style="display:none">
     <div class="form-section-label">The fellowship</div>
 
     <div class="field">
@@ -463,11 +513,14 @@
     </div>
 
     <div class="form-submit">
+      <button type="button" class="btn-back" onclick="prevStep()">← Back</button>
       <button type="submit" class="btn-submit">Submit application →</button>
       <p class="form-legal">
         By submitting you agree to our <a href="privacy.html">Privacy Policy and Terms</a>.<br />
         We will never share your information with third parties.
       </p>
+    </div>
+
     </div>
 
   </form>
@@ -592,5 +645,28 @@
 </script>
 
 <script src="../shared/components.js?v=4"></script>
+  <script>
+    function nextStep() {
+      var s1 = document.getElementById('step-1');
+      var ok = true;
+      s1.querySelectorAll('[required]').forEach(function(el) {
+        var empty = !el.value || !el.value.trim();
+        el.style.borderColor = empty ? 'var(--mag)' : '';
+        el.style.boxShadow   = empty ? '0 0 0 3px rgba(230,12,210,.18)' : '';
+        if (empty) ok = false;
+      });
+      if (!ok) return;
+      s1.style.display = 'none';
+      document.getElementById('step-2').style.display = 'block';
+      document.getElementById('step-text').textContent = 'Step 2 of 2';
+      window.scrollTo({top: document.querySelector('.form-wrap').offsetTop - 20, behavior: 'smooth'});
+    }
+    function prevStep() {
+      document.getElementById('step-2').style.display = 'none';
+      document.getElementById('step-1').style.display = 'block';
+      document.getElementById('step-text').textContent = 'Step 1 of 2';
+      window.scrollTo({top: document.querySelector('.form-wrap').offsetTop - 20, behavior: 'smooth'});
+    }
+  </script>
 </body>
 </html>
