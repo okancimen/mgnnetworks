@@ -21,5 +21,8 @@ jobs:
       - name: Write service account key
         run: echo '${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}' > scripts/gsc-service-account.json
 
-      - name: Submit URLs
+      - name: Submit URLs to Google
         run: node scripts/gsc-index.js
+
+      - name: Submit URLs to IndexNow
+        run: node scripts/indexnow.js
