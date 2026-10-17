@@ -1089,6 +1089,44 @@
     }
     .faq-item.open .faq-a { max-height: 400px; }
 
+    /* ── INSIGHTS STRIP ── */
+    #insights-strip {
+      background: #fff;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: 13px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px 28px;
+      flex-wrap: wrap;
+    }
+    .is-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--mag);
+      white-space: nowrap;
+    }
+    .is-divider { color: rgba(0,0,0,0.15); font-size: 12px; }
+    .is-link {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink);
+      text-decoration: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 320px;
+    }
+    .is-link:hover { color: var(--mag); }
+    .is-arrow { color: var(--mag); font-style: normal; }
+    @media (max-width: 640px) {
+      #insights-strip { justify-content: flex-start; gap: 6px 16px; padding: 11px 20px; }
+      .is-link { max-width: calc(100vw - 80px); }
+      .is-divider { display: none; }
+    }
+
     @media (max-width: 900px) {
       .pillars { grid-template-columns: 1fr; }
       .leader-block { grid-template-columns: 1fr; gap: 32px; padding: 36px; }
@@ -1214,6 +1252,14 @@
     <div class="scroll-mouse"></div>
   </div>
 </section>
+
+<!-- INSIGHTS STRIP -->
+<div id="insights-strip">
+  <span class="is-label">Latest</span>
+  <a href="insights/why-fresh-graduates-struggle-finding-jobs.html" class="is-link">Why fresh graduates struggle to find a job <i class="is-arrow">→</i></a>
+  <span class="is-divider">·</span>
+  <a href="insights/how-to-prepare-for-your-first-job-interview.html" class="is-link">How to prepare for your first job interview <i class="is-arrow">→</i></a>
+</div>
 
 <!-- WHAT WE DO -->
 <section id="what">
