@@ -1150,4 +1150,14 @@
     <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/does-work-experience-matter-for-teenagers.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/does-work-experience-matter-for-teenagers.html"/>
   </url>
+
+  <!-- ===== ARTICLE: how-to-prepare-for-your-first-job-interview (EN only) ===== -->
+  <url>
+    <loc>https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  </url>
 </urlset>
