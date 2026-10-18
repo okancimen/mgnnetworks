@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- ===== HOMEPAGES ===== -->
 
@@ -377,6 +378,10 @@
     <lastmod>2026-06-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://mgnnetworks.com/og-images/how-to-get-work-experience-as-a-student.png</image:loc>
+      <image:title>How to Get Work Experience as a Student</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html"/>
     <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-get-work-experience-as-a-student.html"/>
     <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-get-work-experience-as-a-student.html"/>
@@ -469,6 +474,10 @@
     <lastmod>2026-06-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://mgnnetworks.com/og-images/10-benefits-of-part-time-work-for-students.png</image:loc>
+      <image:title>10 Benefits of Part-Time Work for Students</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html"/>
     <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/10-benefits-of-part-time-work-for-students.html"/>
     <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/10-benefits-of-part-time-work-for-students.html"/>
@@ -560,6 +569,10 @@
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://mgnnetworks.com/og-images/how-to-write-a-cv-with-no-experience.png</image:loc>
+      <image:title>How to Write a CV With No Experience</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-write-a-cv-with-no-experience.html"/>
     <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-write-a-cv-with-no-experience.html"/>
     <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-write-a-cv-with-no-experience.html"/>
@@ -646,6 +659,10 @@
     <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://mgnnetworks.com/og-images/what-is-an-internship-and-how-to-get-one.png</image:loc>
+      <image:title>What Is an Internship and How to Get One</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/what-is-an-internship-and-how-to-get-one.html"/>
     <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/what-is-an-internship-and-how-to-get-one.html"/>
     <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/what-is-an-internship-and-how-to-get-one.html"/>
@@ -732,6 +749,10 @@
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://mgnnetworks.com/og-images/best-part-time-jobs-for-students.png</image:loc>
+      <image:title>Best Part-Time Jobs for Students</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/best-part-time-jobs-for-students.html"/>
     <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/best-part-time-jobs-for-students.html"/>
     <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/best-part-time-jobs-for-students.html"/>
@@ -818,6 +839,10 @@
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://mgnnetworks.com/og-images/why-fresh-graduates-struggle-finding-jobs.png</image:loc>
+      <image:title>Why Fresh Graduates Struggle Finding Jobs</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/why-fresh-graduates-struggle-finding-jobs.html"/>
     <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/why-fresh-graduates-struggle-finding-jobs.html"/>
     <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/why-fresh-graduates-struggle-finding-jobs.html"/>
@@ -905,6 +930,10 @@
     <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://mgnnetworks.com/og-images/does-work-experience-matter-for-teenagers.png</image:loc>
+      <image:title>Does Work Experience Matter for Teenagers?</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/does-work-experience-matter-for-teenagers.html"/>
     <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/does-work-experience-matter-for-teenagers.html"/>
     <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/does-work-experience-matter-for-teenagers.html"/>
@@ -1151,13 +1180,339 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/does-work-experience-matter-for-teenagers.html"/>
   </url>
 
-  <!-- ===== ARTICLE: how-to-prepare-for-your-first-job-interview (EN only) ===== -->
+
+  <!-- ===== ARTICLE: how-to-prepare-for-your-first-job-interview ===== -->
+
   <url>
     <loc>https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <image:image>
+    <image:loc>https://mgnnetworks.com/og-images/how-to-prepare-for-your-first-job-interview.png</image:loc>
+    <image:title>How to Prepare for Your First Job Interview</image:title>
+  </image:image>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/how-to-prepare-for-your-first-job-interview.html"/>
   </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/es/insights/how-to-prepare-for-your-first-job-interview.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/fr/insights/how-to-prepare-for-your-first-job-interview.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/tr/insights/how-to-prepare-for-your-first-job-interview.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/cn/insights/how-to-prepare-for-your-first-job-interview.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/ar/insights/how-to-prepare-for-your-first-job-interview.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/ru/insights/how-to-prepare-for-your-first-job-interview.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/how-to-prepare-for-your-first-job-interview.html"/>
+  </url>
+
+
+  <!-- ===== ARTICLE: remote-internships-for-students ===== -->
+
+  <url>
+    <loc>https://mgnnetworks.com/en/insights/remote-internships-for-students.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://mgnnetworks.com/og-images/remote-internships-for-students.png</image:loc>
+    <image:title>Remote Internships for Students</image:title>
+  </image:image>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/remote-internships-for-students.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/es/insights/remote-internships-for-students.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/remote-internships-for-students.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/fr/insights/remote-internships-for-students.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/remote-internships-for-students.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/tr/insights/remote-internships-for-students.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/remote-internships-for-students.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/cn/insights/remote-internships-for-students.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/remote-internships-for-students.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/ar/insights/remote-internships-for-students.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/remote-internships-for-students.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/ru/insights/remote-internships-for-students.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/remote-internships-for-students.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/remote-internships-for-students.html"/>
+  </url>
+
+  <!-- ===== FAQ PAGES ===== -->
+
+  <url>
+    <loc>https://mgnnetworks.com/en/faq.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  <image:image>
+    <image:loc>https://mgnnetworks.com/og-images/fellowship.png</image:loc>
+    <image:title>Magenta Networks Global Career Fellowship FAQ</image:title>
+  </image:image>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/faq.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/es/faq.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/faq.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/fr/faq.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/faq.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/tr/faq.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/faq.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/cn/faq.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/faq.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/ar/faq.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/faq.html"/>
+  </url>
+
+  <url>
+    <loc>https://mgnnetworks.com/ru/faq.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://mgnnetworks.com/es/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="fr"        href="https://mgnnetworks.com/fr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="zh"        href="https://mgnnetworks.com/cn/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ar"        href="https://mgnnetworks.com/ar/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/faq.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/faq.html"/>
+  </url>
+
 </urlset>
