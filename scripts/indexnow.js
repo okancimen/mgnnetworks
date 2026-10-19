@@ -15,7 +15,7 @@ const https = require('https');
 const fs    = require('fs');
 const path  = require('path');
 
-const KEY      = '5811eb729a90265634a41406aaf8721f';
+const KEY      = '4318a01046734cb3ad1261eaee4af4aa';
 const HOST     = 'mgnnetworks.com';
 const SITEMAP  = path.resolve(__dirname, '../sitemap.xml');
 
