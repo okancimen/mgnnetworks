@@ -472,9 +472,9 @@
       <label>Type de programme <span>*</span></label>
       <select name="programme" required>
         <option value="">Sélectionnez un programme</option>
-        <option value="term">Fellowship Trimestrielle</option>
-        <option value="summer">Bootcamp d'Été</option>
-        <option value="bundle">Pack Trimestriel</option>
+        <option value="term">Fellowship Trimestrielle — $1,500 / mois</option>
+        <option value="summer">Bootcamp d'Été — $2,000 · 6 semaines</option>
+        <option value="bundle">Pack Trimestriel — $5,000 · 4 mois (économisez $1,000)</option>
       </select>
     </div>
 
@@ -624,6 +624,7 @@
       btn.style.background = '#1d1d1f';
       form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
       if (legal) legal.innerHTML = 'Merci. Nous examinons chaque candidature personnellement et répondons dans les 5 jours ouvrables.';
+      setTimeout(function() { window.location.href = 'apply-thank-you.html'; }, 1400);
     })
     .catch(err => {
       // GA4: submission failed

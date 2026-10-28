@@ -472,9 +472,9 @@
       <label>Тип программы <span>*</span></label>
       <select name="programme" required>
         <option value="">Выберите программу</option>
-        <option value="term">Term Fellowship</option>
-        <option value="summer">Summer Bootcamp</option>
-        <option value="bundle">Term Bundle</option>
+        <option value="term">Term Fellowship — $1,500 / месяц</option>
+        <option value="summer">Summer Bootcamp — $2,000 · 6 недель</option>
+        <option value="bundle">Term Bundle — $5,000 · 4 месяца (экономия $1,000)</option>
       </select>
     </div>
 
@@ -624,6 +624,7 @@
       btn.style.background = '#1d1d1f';
       form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
       if (legal) legal.innerHTML = 'Спасибо. Мы лично рассматриваем каждую заявку и отвечаем в течение 5 рабочих дней.';
+      setTimeout(function() { window.location.href = 'apply-thank-you.html'; }, 1400);
     })
     .catch(err => {
       // GA4: submission failed

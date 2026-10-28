@@ -508,9 +508,9 @@
       <label>نوع البرنامج <span>*</span></label>
       <select name="programme" required>
         <option value="">اختر برنامجاً</option>
-        <option value="term">زمالة الفصل الدراسي</option>
-        <option value="summer">معسكر الصيف المكثف</option>
-        <option value="bundle">حزمة الفصل الدراسي</option>
+        <option value="term">زمالة الفصل الدراسي — $1,500 / شهر</option>
+        <option value="summer">معسكر الصيف المكثف — $2,000 · 6 أسابيع</option>
+        <option value="bundle">حزمة الفصل الدراسي — $5,000 · 4 أشهر (وفر $1,000)</option>
       </select>
     </div>
 
@@ -660,6 +660,7 @@
       btn.style.background = '#1d1d1f';
       form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
       if (legal) legal.innerHTML = 'شكراً لك. نراجع كل طلب شخصياً ونردّ خلال 5 أيام عمل.';
+      setTimeout(function() { window.location.href = 'apply-thank-you.html'; }, 1400);
     })
     .catch(err => {
       // GA4: submission failed

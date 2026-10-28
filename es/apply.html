@@ -472,9 +472,9 @@
       <label>Tipo de programa <span>*</span></label>
       <select name="programme" required>
         <option value="">Selecciona un programa</option>
-        <option value="term">Fellowship por Período</option>
-        <option value="summer">Bootcamp de Verano</option>
-        <option value="bundle">Paquete por Período</option>
+        <option value="term">Fellowship por Período — $1,500 / mes</option>
+        <option value="summer">Bootcamp de Verano — $2,000 · 6 semanas</option>
+        <option value="bundle">Paquete por Período — $5,000 · 4 meses (ahorra $1,000)</option>
       </select>
     </div>
 
@@ -624,6 +624,7 @@
       btn.style.background = '#1d1d1f';
       form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
       if (legal) legal.innerHTML = 'Gracias. Revisamos cada solicitud personalmente y respondemos en 5 días hábiles.';
+      setTimeout(function() { window.location.href = 'apply-thank-you.html'; }, 1400);
     })
     .catch(err => {
       // GA4: submission failed

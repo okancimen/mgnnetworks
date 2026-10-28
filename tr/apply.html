@@ -472,9 +472,9 @@
       <label>Program türü <span>*</span></label>
       <select name="programme" required>
         <option value="">Program seçin</option>
-        <option value="term">Dönemlik Fellowship</option>
-        <option value="summer">Yaz Bootcamp'ı</option>
-        <option value="bundle">Dönem Paketi</option>
+        <option value="term">Dönemlik Fellowship — $1.500 / ay</option>
+        <option value="summer">Yaz Bootcamp'ı — $2.000 · 6 hafta</option>
+        <option value="bundle">Dönem Paketi — $5.000 · 4 ay ($1.000 tasarruf)</option>
       </select>
     </div>
 
@@ -624,6 +624,7 @@
       btn.style.background = '#1d1d1f';
       form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
       if (legal) legal.innerHTML = 'Teşekkürler. Her başvuruyu kişisel olarak inceliyoruz ve 5 iş günü içinde yanıt veriyoruz.';
+      setTimeout(function() { window.location.href = 'apply-thank-you.html'; }, 1400);
     })
     .catch(err => {
       // GA4: submission failed

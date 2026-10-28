@@ -1519,5 +1519,55 @@
   document.querySelectorAll('section[id]').forEach(s => sectionObserver.observe(s));
 </script>
 
+<!-- Fellowship sticky banner -->
+<div id="fellowship-banner" style="display:none">
+  <div class="fb-inner">
+    <div class="fb-text">
+      <strong>Global Career Fellowship</strong>
+      <span>Habilidades reales en una empresa real · 17–29 años · Remoto · Carta de referencia</span>
+    </div>
+    <div class="fb-actions">
+      <a href="fellowship.html" class="fb-btn fb-outline">Más información</a>
+      <a href="apply.html" class="fb-btn fb-mag">Solicitar →</a>
+      <button class="fb-dismiss" aria-label="Cerrar">✕</button>
+    </div>
+  </div>
+</div>
+<style>
+#fellowship-banner{position:fixed;bottom:0;left:0;right:0;z-index:9000;background:#1d1d1f;border-top:1px solid rgba(230,12,210,0.3);transform:translateY(100%);transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);padding:14px 20px;}
+#fellowship-banner.fb-visible{transform:translateY(0);}
+.fb-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.fb-text{flex:1;min-width:0;}.fb-text strong{display:block;font-size:14px;font-weight:700;color:#f5f5f7;}.fb-text span{font-size:12px;color:rgba(245,245,247,0.45);}
+.fb-actions{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.fb-btn{padding:9px 18px;border-radius:980px;font-size:13px;font-weight:500;text-decoration:none;transition:all .2s;white-space:nowrap;}
+.fb-mag{background:#E60CD2;color:#fff;}.fb-mag:hover{opacity:.85;}
+.fb-outline{background:transparent;color:rgba(245,245,247,0.7);border:1px solid rgba(245,245,247,0.2);}.fb-outline:hover{border-color:rgba(245,245,247,0.5);color:#f5f5f7;}
+.fb-dismiss{background:none;border:none;color:rgba(245,245,247,0.3);font-size:16px;cursor:pointer;padding:4px 8px;line-height:1;}.fb-dismiss:hover{color:rgba(245,245,247,0.7);}
+@media(max-width:540px){.fb-text span{display:none;}.fb-outline{display:none;}}
+</style>
+<script>
+(function() {
+  var KEY = 'fellowship_banner_dismissed';
+  var stored = localStorage.getItem(KEY);
+  if (stored && Date.now() - parseInt(stored, 10) < 7 * 24 * 60 * 60 * 1000) return;
+  var banner = document.getElementById('fellowship-banner');
+  if (!banner) return;
+  function show() {
+    banner.style.display = 'block';
+    requestAnimationFrame(function() { void banner.offsetHeight; banner.classList.add('fb-visible'); });
+  }
+  banner.querySelector('.fb-dismiss').addEventListener('click', function() {
+    banner.classList.remove('fb-visible');
+    localStorage.setItem(KEY, String(Date.now()));
+    setTimeout(function() { banner.style.display = 'none'; }, 350);
+  });
+  if (sessionStorage.getItem('visited_fellowship') === '1') { show(); return; }
+  var shown = false;
+  window.addEventListener('scroll', function() {
+    if (!shown && window.scrollY > 400) { shown = true; show(); }
+  }, { passive: true });
+})();
+</script>
+
 </body>
 </html>

@@ -478,9 +478,9 @@
       <label>项目类型 <span>*</span></label>
       <select name="programme" required>
         <option value="">选择项目</option>
-        <option value="term">学期奖学金</option>
-        <option value="summer">暑期集训营</option>
-        <option value="bundle">学期套餐</option>
+        <option value="term">学期奖学金 — $1,500 / 月</option>
+        <option value="summer">暑期集训营 — $2,000 · 6周</option>
+        <option value="bundle">学期套餐 — $5,000 · 4个月（节省$1,000）</option>
       </select>
     </div>
 
@@ -630,6 +630,7 @@
       btn.style.background = '#1d1d1f';
       form.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
       if (legal) legal.innerHTML = '感谢您。我们将亲自审核每份申请，并在5个工作日内回复。';
+      setTimeout(function() { window.location.href = 'apply-thank-you.html'; }, 1400);
     })
     .catch(err => {
       // GA4: submission failed

@@ -1065,7 +1065,7 @@
 
     <!-- SUMMER BOOTCAMP -->
     <div class="price-card featured reveal reveal-delay-2">
-      <div class="price-badge price-badge-urgent">Próxima cohorte: 1 de julio — quedan 3 plazas</div>
+      <div class="price-badge price-badge-urgent" id="summer-cohort-badge">Próxima cohorte: 1 de julio — quedan 3 plazas</div>
       <div class="price-label">Bootcamp de Verano</div>
       <div class="price-amount">$2,000</div>
       <div class="price-period">pago único · 6 semanas</div>
@@ -1494,6 +1494,24 @@
     });
   }, { threshold: 0.4 });
   document.querySelectorAll('section[id]').forEach(s => sectionObserver.observe(s));
+
+  sessionStorage.setItem('visited_fellowship', '1');
+
+  (function() {
+    var badge = document.getElementById('summer-cohort-badge');
+    if (!badge) return;
+    var now = new Date();
+    var year = now.getFullYear();
+    if (now.getMonth() >= 8) year += 1;
+    var lang = document.documentElement.lang;
+    var labels = {
+      'en':'Next cohort: June '+year,'es':'Próxima cohorte: Junio '+year,
+      'fr':'Prochaine cohorte : Juin '+year,'tr':'Sonraki kohort: Haziran '+year,
+      'zh-Hans':'下一批次：'+year+'年6月','ar':'الدفعة القادمة: يونيو '+year,
+      'ru':'Следующая когорта: Июнь '+year,
+    };
+    badge.textContent = labels[lang] || labels['en'];
+  })();
 </script>
 
 </body>
