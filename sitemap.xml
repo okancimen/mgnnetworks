@@ -1618,4 +1618,30 @@
     <xhtml:link rel="alternate" hreflang="ru"        href="https://mgnnetworks.com/ru/insights/what-employers-look-for-in-graduates.html"/>
   </url>
 
+  <!-- ===== ARTICLE: how-to-get-a-reference-letter-before-university ===== -->
+  <url>
+    <loc>https://mgnnetworks.com/en/insights/how-to-get-a-reference-letter-before-university.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://mgnnetworks.com/og-images/how-to-get-a-reference-letter-before-university.png</image:loc>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/how-to-get-a-reference-letter-before-university.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/how-to-get-a-reference-letter-before-university.html"/>
+  </url>
+
+  <!-- ===== ARTICLE: online-work-experience-for-students ===== -->
+  <url>
+    <loc>https://mgnnetworks.com/en/insights/online-work-experience-for-students.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://mgnnetworks.com/og-images/online-work-experience-for-students.png</image:loc>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://mgnnetworks.com/en/insights/online-work-experience-for-students.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/insights/online-work-experience-for-students.html"/>
+  </url>
+
 </urlset>
