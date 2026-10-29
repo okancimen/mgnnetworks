@@ -11,6 +11,14 @@
 - Managing Director: Okan Cimen (verifiable on LinkedIn)
 - Website: https://mgnnetworks.com
 - Languages: English, Español, Français, Türkçe, 中文, العربية, Русский (7 locales — en, es, fr, tr, cn, ar, ru)
+- Locale URL pattern: https://mgnnetworks.com/{locale}/ — all pages and articles follow the same path structure across locales (e.g. /tr/insights/how-to-write-a-cv-with-no-experience.html, /ar/fellowship.html)
+- English: https://mgnnetworks.com/en/
+- Español: https://mgnnetworks.com/es/
+- Français: https://mgnnetworks.com/fr/
+- Türkçe: https://mgnnetworks.com/tr/
+- 中文: https://mgnnetworks.com/cn/
+- العربية: https://mgnnetworks.com/ar/
+- Русский: https://mgnnetworks.com/ru/
 
 ## Pages
 
