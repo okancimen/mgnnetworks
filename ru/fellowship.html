@@ -854,7 +854,27 @@
       .nav-links { display: none; }
       .hamburger { display: flex; }
       .tracks-grid  { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
     }
+
+    /* ── TESTIMONIALS ── */
+    #testimonials { background: var(--ink); padding: 120px 24px; text-align: center; }
+    #testimonials .kicker { font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--mag); margin-bottom: 14px; }
+    #testimonials h2 { font-size: clamp(32px,5.5vw,60px); font-weight: 700; letter-spacing: -2px; line-height: 1.07; color: #fff; max-width: 680px; margin: 0 auto 16px; }
+    #testimonials .sub { font-size: 17px; color: rgba(245,245,247,0.45); max-width: 500px; margin: 0 auto 20px; line-height: 1.6; }
+    .agg-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(175,254,5,0.08); border: 1px solid rgba(175,254,5,0.15); border-radius: 12px; padding: 10px 20px; margin-bottom: 56px; }
+    .agg-score { font-size: 28px; font-weight: 800; color: var(--green); letter-spacing: -1px; line-height: 1; }
+    .agg-stars { display: flex; gap: 2px; }
+    .agg-star { font-size: 14px; color: var(--green); }
+    .agg-label { font-size: 12px; color: rgba(245,245,247,0.4); text-align: left; line-height: 1.4; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 2px; max-width: 1000px; margin: 0 auto; border-radius: 20px; overflow: hidden; }
+    .review-card { background: #2a2a2e; padding: 44px 40px; text-align: left; }
+    .review-stars { display: flex; gap: 3px; margin-bottom: 20px; }
+    .review-star { font-size: 15px; color: var(--green); }
+    .review-quote { font-size: 16px; color: rgba(245,245,247,0.82); line-height: 1.7; margin-bottom: 28px; font-style: italic; }
+    .review-divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin-bottom: 20px; }
+    .review-author-name { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 3px; }
+    .review-author-detail { font-size: 12px; color: rgba(245,245,247,0.35); }
   </style>
 </head>
 <body>
@@ -1264,6 +1284,48 @@
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <p class="kicker reveal">Что говорят семьи</p>
+  <h2 class="reveal reveal-delay-1">Родители и участники говорят за себя.</h2>
+  <p class="sub reveal reveal-delay-2">Более 80% участников завершают программу. Вот что некоторые из них — и их родители — рассказали.</p>
+  <div class="agg-badge reveal reveal-delay-2">
+    <span class="agg-score">4,9</span>
+    <span class="agg-stars">★★★★★</span>
+    <span class="agg-label">Средняя оценка<br />47 подтверждённых отзывов</span>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">"Моя дочь подала заявки в шесть университетов прошлой осенью. На каждом собеседовании интервьюеры спрашивали о её работе в Magenta Networks. Рекомендательное письмо было не просто документом — оно стало отправной точкой разговора, демонстрирующего именно то, на что она способна."</p>
+      <hr class="review-divider" />
+      <div class="review-author-name">Sarah M.</div>
+      <div class="review-author-detail">Родитель · Великобритания · Term Fellowship, 2025</div>
+    </div>
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">"Когда я вступил в программу, мне было 16 лет. За шесть недель я уже составлял отчёты по конкурентному анализу, которые компания реально использовала. Ни один класс не готовил меня к такой обратной связи. Я начал студентом, а закончил человеком, умеющим работать."</p>
+      <hr class="review-divider" />
+      <div class="review-author-name">Leon K.</div>
+      <div class="review-author-detail">Участник · Германия · 16 лет на момент зачисления, 2025</div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">"Оценка Eduentry направила сына в направление Data &amp; Research — он бы никогда не выбрал это сам. Ко второму месяцу он создавал дашборды, которые его отдел реально использовал. Параллельно улучшились оценки в школе. Дисциплина перешла и в другие сферы его жизни."</p>
+      <hr class="review-divider" />
+      <div class="review-author-name">Wei Lian T.</div>
+      <div class="review-author-detail">Родитель · Сингапур · Term Fellowship, 2024</div>
+    </div>
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">"После этого моё личное заявление для UCAS написалось практически само. У меня была реальная работа, реальная обратная связь и письмо от конкретного руководителя. Когда я начала писать заявки, я уже точно знала, на что способна."</p>
+      <hr class="review-divider" />
+      <div class="review-author-name">Nour A.</div>
+      <div class="review-author-detail">Участница · ОАЭ · 17 лет на момент зачисления, 2025</div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section id="faq">
   <div class="faq-wrap">
@@ -1491,7 +1553,7 @@
 }
 </script>
 
-<script src="../shared/components.js?v=5"></script>
+<script src="../shared/components.js?v=6"></script>
 <script>
   // FAQ accordion
   document.querySelectorAll('.faq-q').forEach(btn => {
@@ -1515,7 +1577,7 @@
   });
 
   // Nav dark/light
-  const darkSections = ['fellowship', 'gains', 'the-letter', 'compare', 'schools', 'apply-cta'];
+  const darkSections = ['fellowship', 'gains', 'the-letter', 'compare', 'schools', 'testimonials', 'apply-cta'];
   const nav = document.getElementById('nav');
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
