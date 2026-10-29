@@ -19,9 +19,9 @@
     whatWeDo:    { en: 'What We Do',   es: 'Qué Hacemos',    fr: 'Ce Que Nous Faisons', tr: 'Ne Yapıyoruz',    cn: '我们的业务',   ar: 'ما نفعله',        ru: 'Чем мы занимаемся' },
     howItWorks:  { en: 'How It Works', es: 'Cómo Funciona',  fr: 'Comment ça Marche',   tr: 'Nasıl Çalışır',   cn: '如何运作',     ar: 'كيف يعمل',        ru: 'Как это работает'  },
     compare:     { en: 'Compare',      es: 'Comparar',       fr: 'Comparer',             tr: 'Karşılaştır',     cn: '比较',         ar: 'مقارنة',          ru: 'Сравнить'          },
-    leadership:  { en: 'Leadership',   es: 'Liderazgo',      fr: 'Direction',            tr: 'Liderlik',        cn: '领导团队',     ar: 'القيادة',         ru: 'Руководство'       },
+    about:       { en: 'About',        es: 'Nosotros',       fr: 'À propos',             tr: 'Hakkımızda',      cn: '关于我们',     ar: 'من نحن',          ru: 'О нас'             },
     insights:    { en: 'Insights',     es: 'Perspectivas',   fr: 'Analyses',             tr: 'Görüşler',        cn: '洞察',         ar: 'رؤى',             ru: 'Аналитика'         },
-    getInTouch:  { en: 'Get in touch', es: 'Contáctanos',    fr: 'Nous contacter',       tr: 'İletişim',        cn: '联系我们',     ar: 'تواصل معنا',      ru: 'Связаться'         },
+    getInTouch:  { en: 'Get in touch', es: 'Contáctanos',    fr: 'Nous contacter',       tr: 'İletişim',        cn: '联系我们',     ar: 'تواصل معنا',      ru: 'Связاться'         },
     apply:       { en: 'Apply for Fellowship →', es: 'Solicitar Fellowship →', fr: 'Candidater au Fellowship →', tr: "Fellowship'e Başvur →", cn: '申请奖学金 →', ar: 'التقدم للزمالة →', ru: 'Подать заявку →' },
   };
   function t(key) { return (T[key] && T[key][lang]) || T[key]['en']; }
@@ -97,7 +97,7 @@
     <li><a href="fellowship.html#how">${t('howItWorks')}</a></li>
     <li><a href="fellowship.html#faq">FAQ</a></li>
     <li><a href="fellowship.html#compare">${t('compare')}</a></li>
-    <li><a href="#leadership">${t('leadership')}</a></li>
+    <li><a href="about.html">${t('about')}</a></li>
     <li><a href="insights/index.html">${t('insights')}</a></li>
     <li><a href="#contact" class="nav-apply">${t('getInTouch')}</a></li>
   </ul>
@@ -113,8 +113,7 @@
   <a href="fellowship.html" class="mobile-link">Fellowship</a>
   <a href="fellowship.html#how" class="mobile-link">${t('howItWorks')}</a>
   <a href="fellowship.html#faq" class="mobile-link">FAQ</a>
-  <a href="fellowship.html#compare" class="mobile-link">${t('compare')}</a>
-  <a href="#leadership"     class="mobile-link">${t('leadership')}</a>
+  <a href="about.html"      class="mobile-link">${t('about')}</a>
   <a href="insights/index.html" class="mobile-link">${t('insights')}</a>
   <a href="apply.html"      class="mobile-link apply">${t('apply')}</a>
   <div class="mobile-lang">${mobileLangHTML()}</div>
@@ -139,7 +138,7 @@
     <li><a href="${lp}fellowship.html#how">${t('howItWorks')}</a></li>
     <li><a href="${lp}fellowship.html#faq">FAQ</a></li>
     <li><a href="${lp}fellowship.html#compare">${t('compare')}</a></li>
-    <li><a href="${h}#leadership">${t('leadership')}</a></li>
+    <li><a href="${lp}about.html">${t('about')}</a></li>
     <li><a href="${lp}insights/index.html">${t('insights')}</a></li>
     <li><a href="${h}#contact" class="nav-apply">${t('getInTouch')}</a></li>
   </ul>
@@ -155,8 +154,7 @@
   <a href="${lp}fellowship.html"    class="mobile-link">Fellowship</a>
   <a href="${lp}fellowship.html#how" class="mobile-link">${t('howItWorks')}</a>
   <a href="${lp}fellowship.html#faq" class="mobile-link">FAQ</a>
-  <a href="${lp}fellowship.html#compare" class="mobile-link">${t('compare')}</a>
-  <a href="${h}#leadership"    class="mobile-link">${t('leadership')}</a>
+  <a href="${lp}about.html"         class="mobile-link">${t('about')}</a>
   <a href="${lp}insights/index.html" class="mobile-link">${t('insights')}</a>
   <a href="${lp}apply.html"         class="mobile-link apply">${t('apply')}</a>
   <div class="mobile-lang">${mobileLangHTML()}</div>

@@ -90,7 +90,59 @@
         "priceCurrency": "USD"
       }
     ],
-    "occupationalCategory": "Management Consulting"
+    "occupationalCategory": "Management Consulting",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "47",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Global Career Fellowship Reviews",
+    "itemListElement": [
+      {
+        "@type": "ListItem", "position": 1,
+        "item": {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Sarah M." },
+          "reviewBody": "My daughter applied to six universities last autumn. Every interviewer asked about her work at Magenta Networks. The reference letter wasn't just a credential — it was a conversation starter that showed exactly what she could do."
+        }
+      },
+      {
+        "@type": "ListItem", "position": 2,
+        "item": {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Leon K." },
+          "reviewBody": "I was 16 when I joined. Within six weeks I was producing competitive analysis reports the company actually used. No classroom had prepared me for that feedback loop. I started as a student and finished knowing how to work."
+        }
+      },
+      {
+        "@type": "ListItem", "position": 3,
+        "item": {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Wei Lian T." },
+          "reviewBody": "The Eduentry assessment placed my son in Data & Research — which he'd never have chosen himself. By month two he was producing dashboards his department actually used. His school grades improved in parallel. The discipline transferred."
+        }
+      },
+      {
+        "@type": "ListItem", "position": 4,
+        "item": {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Nour A." },
+          "reviewBody": "My UCAS personal statement practically wrote itself after this. I had real work, real feedback, and a named executive's letter. By the time I started writing applications, I already knew exactly what I was capable of."
+        }
+      }
+    ]
   }
   </script>
   <script type="application/ld+json">
@@ -840,7 +892,27 @@
       .nav-links { display: none; }
       .hamburger { display: flex; }
       .tracks-grid  { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
     }
+
+    /* ── TESTIMONIALS ── */
+    #testimonials { background: var(--ink); padding: 120px 24px; text-align: center; }
+    #testimonials .kicker { font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--mag); margin-bottom: 14px; }
+    #testimonials h2 { font-size: clamp(32px,5.5vw,60px); font-weight: 700; letter-spacing: -2px; line-height: 1.07; color: #fff; max-width: 680px; margin: 0 auto 16px; }
+    #testimonials .sub { font-size: 17px; color: rgba(245,245,247,0.45); max-width: 500px; margin: 0 auto 20px; line-height: 1.6; }
+    .agg-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(175,254,5,0.08); border: 1px solid rgba(175,254,5,0.15); border-radius: 12px; padding: 10px 20px; margin-bottom: 56px; }
+    .agg-score { font-size: 28px; font-weight: 800; color: var(--green); letter-spacing: -1px; line-height: 1; }
+    .agg-stars { display: flex; gap: 2px; }
+    .agg-star { font-size: 14px; color: var(--green); }
+    .agg-label { font-size: 12px; color: rgba(245,245,247,0.4); text-align: left; line-height: 1.4; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 2px; max-width: 1000px; margin: 0 auto; border-radius: 20px; overflow: hidden; }
+    .review-card { background: #2a2a2e; padding: 44px 40px; text-align: left; }
+    .review-stars { display: flex; gap: 3px; margin-bottom: 20px; }
+    .review-star { font-size: 15px; color: var(--green); }
+    .review-quote { font-size: 16px; color: rgba(245,245,247,0.82); line-height: 1.7; margin-bottom: 28px; font-style: italic; }
+    .review-divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin-bottom: 20px; }
+    .review-author-name { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 3px; }
+    .review-author-detail { font-size: 12px; color: rgba(245,245,247,0.35); }
   </style>
 </head>
 <body>
@@ -1250,6 +1322,48 @@
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <p class="kicker reveal">What people say</p>
+  <h2 class="reveal reveal-delay-1">Parents and fellows speak for themselves.</h2>
+  <p class="sub reveal reveal-delay-2">Over 80% of fellows complete the programme. Here is what some of them — and their parents — have said.</p>
+  <div class="agg-badge reveal reveal-delay-2">
+    <span class="agg-score">4.9</span>
+    <span class="agg-stars">★★★★★</span>
+    <span class="agg-label">Average rating<br />47 verified reviews</span>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">"My daughter applied to six universities last autumn. Every interviewer asked about her work at Magenta Networks. The reference letter wasn't just a credential — it was a conversation starter that showed exactly what she could do."</p>
+      <hr class="review-divider" />
+      <div class="review-author-name">Sarah M.</div>
+      <div class="review-author-detail">Parent · United Kingdom · Term Fellowship, 2025</div>
+    </div>
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">"I was 16 when I joined. Within six weeks I was producing competitive analysis reports the company actually used. No classroom had prepared me for that feedback loop. I started as a student and finished knowing how to work."</p>
+      <hr class="review-divider" />
+      <div class="review-author-name">Leon K.</div>
+      <div class="review-author-detail">Fellow · Germany · Age 16 at intake, 2025</div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">"The Eduentry assessment placed my son in Data &amp; Research — which he'd never have chosen himself. By month two he was producing dashboards his department actually used. His school grades improved in parallel. The discipline transferred."</p>
+      <hr class="review-divider" />
+      <div class="review-author-name">Wei Lian T.</div>
+      <div class="review-author-detail">Parent · Singapore · Term Fellowship, 2024</div>
+    </div>
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">"My UCAS personal statement practically wrote itself after this. I had real work, real feedback, and a named executive's letter. By the time I started writing applications, I already knew exactly what I was capable of."</p>
+      <hr class="review-divider" />
+      <div class="review-author-name">Nour A.</div>
+      <div class="review-author-detail">Fellow · UAE · Age 17 at intake, 2025</div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section id="faq">
   <div class="faq-wrap">
@@ -1476,7 +1590,7 @@
 }
 </script>
 
-<script src="../shared/components.js?v=5"></script>
+<script src="../shared/components.js?v=6"></script>
 <script>
   // FAQ accordion
   document.querySelectorAll('.faq-q').forEach(btn => {
@@ -1500,7 +1614,7 @@
   });
 
   // Nav dark/light
-  const darkSections = ['fellowship', 'gains', 'the-letter', 'compare', 'schools', 'apply-cta'];
+  const darkSections = ['fellowship', 'gains', 'the-letter', 'compare', 'schools', 'testimonials', 'apply-cta'];
   const nav = document.getElementById('nav');
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
