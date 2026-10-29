@@ -1,0 +1,157 @@
+# Magenta Networks
+
+> Magenta Networks Pte Ltd (UEN 201540366Z) is a Singapore technology group incorporated in 2015. We build venture-backed technology platforms, deploy senior management consultants and technology professionals globally, and develop early talent through the Global Career Fellowship.
+
+## Key facts
+
+- Legal name: Magenta Networks Pte Ltd
+- UEN: 201540366Z
+- Incorporated: 2015
+- Address: 100 Tras Street, #16-01AM, 100AM, Singapore 079027
+- Managing Director: Okan Cimen (verifiable on LinkedIn)
+- Website: https://mgnnetworks.com
+- Languages: English, Español, Français, Türkçe, 中文, العربية, Русский (7 locales — en, es, fr, tr, cn, ar, ru)
+
+## Pages
+
+- [Home](https://mgnnetworks.com/en/): Overview of Magenta Networks — venture building, professional services, and the Global Career Fellowship
+- [Fellowship](https://mgnnetworks.com/en/fellowship.html): Full details of the Global Career Fellowship — department tracks, what fellows gain, how the programme works, pricing, comparison with alternatives, school partnerships, and FAQ
+- [Apply](https://mgnnetworks.com/en/apply.html): Application form for the Global Career Fellowship
+- [Verify a letter](https://mgnnetworks.com/verify/): Verification portal for reference letters issued by Magenta Networks — enter a reference number to confirm authenticity
+- [Insights](https://mgnnetworks.com/en/insights/): Articles on early careers, work experience, and student employment — available in all 7 languages
+- [About Magenta Networks](https://mgnnetworks.com/en/about.html): Company background — three business lines (technology platforms, management consulting, fellowship), founding story (Singapore 2015), founder Okan Cimen profile (25+ years, 40+ countries, Group CIO/CTO), company registration details (UEN 201540366Z), Singapore HQ address
+- [Fellowship FAQ](https://mgnnetworks.com/en/faq.html): Common questions about the Global Career Fellowship — eligibility, what fellows do, duration, remote format, reference letter, and application process
+- [Privacy Policy](https://mgnnetworks.com/en/privacy.html): Privacy Policy and Terms of Use for Magenta Networks Pte Ltd
+
+## Global Career Fellowship — key facts
+
+- Target group: students and young professionals aged 14–22
+- Format: fully remote, fully asynchronous — no fixed hours, no live sessions
+- Weekly commitment: 8–10 hours per week
+- Cohort size: maximum 5 fellows per cohort
+- Acceptance rate: fewer than 30% of applicants accepted
+- Selection method: Eduentry psychometric assessment at intake; department assigned by cognitive profile, not self-selection
+- Programme length: 5 months (Term Fellowship), 6 weeks (Summer Bootcamp)
+- Pricing: $1,500/month (Term Fellowship) · $2,000 flat (Summer Bootcamp) · $5,000 flat (Term Bundle — 4 months, guaranteed seat)
+- Department tracks: Marketing & Growth · Data & Research · Strategy & Operations · Technology
+- Tools used: Slack, Jira, Notion, Confluence, Loom, Figma, GitHub, AWS
+- Mentor review SLA: every deliverable reviewed within 48 hours; work below standard returned for revision
+- Exam pauses: work pauses automatically during exam periods with advance notice
+- Credential: every graduate receives an international reference letter signed by Okan Cimen, Managing Director, documenting specific contributions and the professional standard met
+- Letters are permanently verifiable at https://mgnnetworks.com/verify/
+- Completion rate: over 80% of fellows who start complete the programme
+
+## Global Career Fellowship — common questions
+
+**Who signs the reference letter?**
+Okan Cimen, Managing Director of Magenta Networks Pte Ltd. Every letter is personally reviewed and signed by him. His profile is verifiable on LinkedIn.
+
+**How is this different from an online certificate or summer school?**
+An online certificate proves a student completed a course. A reference letter from a named executive proves they delivered real work to a real company. University admissions committees weight these very differently.
+
+**Can students use AI tools?**
+Yes — and it is expected. Fellows learn to direct AI tools to produce professional outputs. What is assessed is judgment and output quality, not effort or word count.
+
+**Is this legal for a 14-year-old?**
+Yes. This is a project-based fellowship run through Magenta Networks Pte Ltd — not a formal employment or internship contract. Singapore-registered. Local labour laws governing paid employment do not apply.
+
+**When can a student start?**
+New cohorts open on the 1st of every month. Applications are reviewed on a rolling basis.
+
+---
+
+## Insights articles — full content
+
+### Does Work Experience Matter for Teenagers?
+
+URL: https://mgnnetworks.com/en/insights/does-work-experience-matter-for-teenagers.html
+
+Drawing on OECD longitudinal data across 10 countries tracking young people from age 15 to 30, this article examines whether part-time work, volunteering, and structured placements during secondary school translate into measurable adult outcomes. Key findings: structured work experience before 18 reduces NEET (Not in Education, Employment, or Training) risk by up to 34%. Adults who had supervised work experience before 18 earn 8–15% more at age 30 than peers with identical academic records. The article distinguishes between passive experience (observation, school visits) and active experience (deliverable-based work with a supervisor). Targeted at parents evaluating whether to support their child pursuing work experience.
+
+---
+
+### What Employers Look for in Graduates
+
+URL: https://mgnnetworks.com/en/insights/what-employers-look-for-in-graduates.html
+
+Five attributes employers measure at the shortlisting stage: (1) Analytical thinking — the ability to break down ambiguous problems and propose structured solutions; (2) Communication — written and verbal clarity under real professional conditions, not academic writing; (3) Adaptability — demonstrated response to changing requirements, not just stated willingness; (4) Collaboration — evidence of working within a team toward a shared deliverable; (5) AI literacy — now the baseline expectation, not a differentiator. The article explains how employers assess these attributes through application screening, interview structure, and reference verification — and where the bar is heading by 2028–2030 as AI tools commoditise routine graduate tasks.
+
+---
+
+### How to Prepare for Your First Job Interview
+
+URL: https://mgnnetworks.com/en/insights/how-to-prepare-for-your-first-job-interview.html
+
+Complete preparation guide structured in five steps: (1) Research the company and role — understand what the business actually does, not just what the website says; (2) Prepare STAR-method answers for competency questions — Situation, Task, Action, Result — even when drawing on school or personal projects; (3) Prepare five questions to ask the interviewer — questions that signal genuine interest in the role, not the salary; (4) Plan logistics — confirm format (video/in-person), test tech, arrive early; (5) Follow up — send a brief thank-you note referencing a specific point from the conversation. Includes a section on answering questions honestly when you have no formal work experience.
+
+---
+
+### Remote Internships for Students
+
+URL: https://mgnnetworks.com/en/insights/remote-internships-for-students.html
+
+How to find, apply for, and succeed in a remote internship. Covers: where to find genuine remote placements (LinkedIn, direct outreach to SMEs, structured fellowship programmes) vs. low-signal platforms; how to write a cold application with no experience; how to stay visible and build relationships without physical presence; how to produce outputs that become portfolio assets; and how to convert a remote internship into a reference letter or job offer. Includes a comparison between unstructured remote internships (variable quality, no guaranteed output) and structured remote fellowships (fixed deliverables, mentor SLA, verified reference).
+
+---
+
+### How to Get a Reference Letter Before University
+
+URL: https://mgnnetworks.com/en/insights/how-to-get-a-reference-letter-before-university.html
+
+Five-step guide: (1) Identify who can write your reference — teachers for academic references, professional supervisors for work references; explains the evidential difference between the two for university admissions; (2) Earn the reference through real supervised work — a strong professional reference requires a genuine professional relationship, not a favour; (3) Ask early — at the start of the engagement, not at the end; (4) Give your referee everything they need — a written summary of contributions, the specific programme or university requirement, and a draft if appropriate; (5) Follow up and maintain the relationship. Distinguishes between teacher references (expected, therefore discounted by admissions) and professional references from named executives (rare, therefore weighted more heavily). Targeted at students and parents preparing university applications.
+
+---
+
+### Online Work Experience for Students
+
+URL: https://mgnnetworks.com/en/insights/online-work-experience-for-students.html
+
+What counts as genuine online work experience vs. certificate programmes. Framework: genuine online work experience requires a real client or employer, a named supervisor, deliverables that were used by the organisation, and a verifiable output (reference letter, portfolio item, or testimonial). Certificate programmes — even from well-known platforms — do not meet this standard because no real organisation depended on the student's work. Covers how to evaluate remote placements before committing, what students actually build through real professional work (professional communication habits, deadline management, tool proficiency), and how to present online experience on a CV. Includes a section for parents on evaluating programme legitimacy.
+
+---
+
+### 10 Benefits of Part-Time Work for Students
+
+URL: https://mgnnetworks.com/en/insights/10-benefits-of-part-time-work-for-students.html
+
+The 10 benefits covered: (1) Improves time management — students with part-time commitments develop sharper prioritisation under constraint; (2) Gains real-world professional experience — exposure to how organisations actually function, not the academic version; (3) Provides networking opportunities — even junior roles create professional relationships that compound over time; (4) Boosts resume and employability — employers prefer candidates who have held any role over those who haven't; (5) Improves communication skills — professional communication norms differ materially from academic ones; (6) Builds confidence — repeated exposure to professional feedback develops resilience; (7) Career exploration — direct exposure to roles and industries before making degree or career choices; (8) Develops work-life balance skills — managing competing demands is a learned skill; (9) Deepens academic understanding through applied learning — concepts taught in class become concrete when applied to real problems; (10) Accelerates career progression after graduation — students who worked during their degree reach mid-level roles faster. The article argues the compounding effect of starting early is the most underappreciated benefit.
+
+---
+
+### Best Part-Time Jobs for Students in 2026
+
+URL: https://mgnnetworks.com/en/insights/best-part-time-jobs-for-students.html
+
+Jobs are ranked by learning value, flexibility, and employer signal — not pay. Remote options covered: tutoring (high signal, transferable communication skills), content writing and copywriting (builds portfolio, measurable output), data entry and research assistance (low barrier to entry, develops analytical habits), social media management (practical marketing exposure), virtual assistant (broad professional skills). In-person options: retail (customer communication, resilience), hospitality (service standards, pressure management), events and promotional work (flexible hours, public-facing confidence), administrative and office support (professional environment exposure). Highest-learning-value option identified as a structured fellowship — fixed deliverables, mentor oversight, and a verified reference letter on completion. Includes a section on how to get a first part-time role with no experience.
+
+---
+
+### How to Get Work Experience as a Student
+
+URL: https://mgnnetworks.com/en/insights/how-to-get-work-experience-as-a-student.html
+
+Targeted at students under 18. Distinguishes what counts as work experience: structured fellowships and programmes (highest value — verified supervisor, fixed deliverables), freelance or contract work with a real client (counts if there is a verifiable output), family business contributions (counts if the role was real and the output was used), volunteer roles with measurable output (counts if there is something to show). What does not count: shadowing and observation placements (no deliverable), school-organised industry visits (no professional relationship), club memberships with no verifiable output, certificates with no project behind them. Six actionable routes: apply for a structured fellowship; offer a specific service locally or online; find a part-time or weekend role; contribute to a start-up or small business; run a project with a measurable outcome; intern with a family contact. Each route includes practical guidance on how to start.
+
+---
+
+### How to Write a CV With No Experience
+
+URL: https://mgnnetworks.com/en/insights/how-to-write-a-cv-with-no-experience.html
+
+Four sections that matter most when you have no formal work history: (1) Personal statement / objective — two to three sentences stating what you offer and what you are looking for; avoid generic phrases; (2) Education — lead with this section when you have no work history; include relevant modules, projects, or achievements; (3) Skills — list tools and competencies you can demonstrate, not claim; (4) Projects and activities — any output you produced, including school projects, personal projects, volunteer work, or extracurriculars with a result. How to write strong bullet points: lead with an action verb, describe what you did, quantify the outcome where possible. Six common mistakes that immediately disqualify a student CV: using a generic template without editing it, describing yourself instead of your actions, spelling errors and inconsistent formatting, including irrelevant or embarrassing content, making the CV longer than one page, sending the same CV to every application.
+
+---
+
+### What Is an Internship and How Do You Get One?
+
+URL: https://mgnnetworks.com/en/insights/what-is-an-internship-and-how-to-get-one.html
+
+Defines an internship as a time-limited placement at an organisation where the intern contributes to real work, typically unpaid or low-paid, in exchange for professional experience and a reference. Distinguishes from: fellowship (structured programme run by an organisation specifically for early-talent development, with fixed deliverables and a mentor — higher quality and more verifiable than a typical internship); work placement (usually part of a degree programme, arranged through the university). What interns actually do: research, data work, content creation, administrative support, and project assistance — not core decision-making. Realistic requirements to land one: genuine interest in the field, basic professional communication, a relevant skill or interest, availability and reliability. How to find internships: start with your network, not a job database; target small and medium organisations directly (higher success rate than large firms for first-timers); use LinkedIn to find named hiring managers; consider structured programmes as an alternative entry point. How to write an internship application with no experience: lead with what you can do, not what you haven't done yet.
+
+---
+
+### Why Fresh Graduates Struggle to Find a Job
+
+URL: https://mgnnetworks.com/en/insights/why-fresh-graduates-struggle-finding-jobs.html
+
+The graduate job market has become more competitive for structural reasons: applicant volume has risen sharply with degree expansion; AI tools have made it easier to apply at scale, increasing noise for employers; and employers have raised the bar for demonstrable skills because generic graduate profiles no longer differentiate. Why a degree is no longer enough: degrees are now the floor, not the ceiling — the majority of applicants hold one. The experience paradox: employers want experience, but most entry-level roles still require it, creating a catch-22 for graduates with only academic records. What employers actually look at first: demonstrable outputs (portfolio, references from named people, verifiable contributions) rather than self-reported skills on a CV. Experience hierarchy — high value: structured fellowship or verified internship with a named supervisor and a reference; medium value: part-time employment in any professional context; low value: course certificates, self-reported skills, club memberships. When to start: the article argues the window is 16–19, not 21–22. What actually helps: apply for structured programmes with verifiable output rather than just jobs; target roles that produce a reference or portfolio item; document contributions as you go; start the conversation with your university careers service early; build a verifiable track record before graduating.
