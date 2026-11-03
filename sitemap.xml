@@ -1912,4 +1912,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/en/about.html"/>
   </url>
 
+  <!-- ===== ARTICLE: how-to-apply-to-university-abroad (TR only) ===== -->
+  <url>
+    <loc>https://mgnnetworks.com/tr/insights/how-to-apply-to-university-abroad.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-apply-to-university-abroad.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/tr/insights/how-to-apply-to-university-abroad.html"/>
+  </url>
+
+  <!-- ===== ARTICLE: how-to-write-an-english-cv-for-university (TR only) ===== -->
+  <url>
+    <loc>https://mgnnetworks.com/tr/insights/how-to-write-an-english-cv-for-university.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://mgnnetworks.com/tr/insights/how-to-write-an-english-cv-for-university.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mgnnetworks.com/tr/insights/how-to-write-an-english-cv-for-university.html"/>
+  </url>
+
 </urlset>
