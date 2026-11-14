@@ -49,7 +49,7 @@
   // prefix for locale-level links when inside a content subfolder (e.g. insights/)
   const lp           = (depth === 2 && inContentSub) ? '../' : '';
 
-  const homeHref    = isIndex ? '#hero' : (depth === 2 ? '../' : (inOtherSub ? `${base}en/index.html` : 'index.html'));
+  const homeHref    = isIndex ? '#hero' : (depth === 2 ? '../' : (inOtherSub ? `${base}en/` : './'));
   const privacyHref = inOtherSub    ? `${base}en/privacy.html`
                     : depth === 2   ? '../privacy.html'
                     : 'privacy.html';
@@ -98,7 +98,7 @@
     <li><a href="fellowship.html#faq">FAQ</a></li>
     <li><a href="fellowship.html#compare">${t('compare')}</a></li>
     <li><a href="about.html">${t('about')}</a></li>
-    <li><a href="insights/index.html">${t('insights')}</a></li>
+    <li><a href="insights/">${t('insights')}</a></li>
     <li><a href="#contact" class="nav-apply">${t('getInTouch')}</a></li>
   </ul>
   ${langDropdownHTML()}
@@ -114,7 +114,7 @@
   <a href="fellowship.html#how" class="mobile-link">${t('howItWorks')}</a>
   <a href="fellowship.html#faq" class="mobile-link">FAQ</a>
   <a href="about.html"      class="mobile-link">${t('about')}</a>
-  <a href="insights/index.html" class="mobile-link">${t('insights')}</a>
+  <a href="insights/" class="mobile-link">${t('insights')}</a>
   <a href="apply.html"      class="mobile-link apply">${t('apply')}</a>
   <div class="mobile-lang">${mobileLangHTML()}</div>
   <span class="mobile-menu-footer">Magenta Networks Pte Ltd · Singapore</span>
@@ -139,7 +139,7 @@
     <li><a href="${lp}fellowship.html#faq">FAQ</a></li>
     <li><a href="${lp}fellowship.html#compare">${t('compare')}</a></li>
     <li><a href="${lp}about.html">${t('about')}</a></li>
-    <li><a href="${lp}insights/index.html">${t('insights')}</a></li>
+    <li><a href="${lp}insights/">${t('insights')}</a></li>
     <li><a href="${h}#contact" class="nav-apply">${t('getInTouch')}</a></li>
   </ul>
   ${langDropdownHTML()}
@@ -155,7 +155,7 @@
   <a href="${lp}fellowship.html#how" class="mobile-link">${t('howItWorks')}</a>
   <a href="${lp}fellowship.html#faq" class="mobile-link">FAQ</a>
   <a href="${lp}about.html"         class="mobile-link">${t('about')}</a>
-  <a href="${lp}insights/index.html" class="mobile-link">${t('insights')}</a>
+  <a href="${lp}insights/" class="mobile-link">${t('insights')}</a>
   <a href="${lp}apply.html"         class="mobile-link apply">${t('apply')}</a>
   <div class="mobile-lang">${mobileLangHTML()}</div>
   <span class="mobile-menu-footer">Magenta Networks Pte Ltd · Singapore</span>
