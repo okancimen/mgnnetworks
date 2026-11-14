@@ -41,3 +41,6 @@ Disallow: /*/verify/
 Disallow: /letters/
 
 Sitemap: https://mgnnetworks.com/sitemap.xml
+
+# LLM context files
+LLM-Context: https://mgnnetworks.com/llms.txt
