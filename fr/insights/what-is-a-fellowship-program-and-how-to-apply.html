@@ -97,6 +97,16 @@
         "@type": "Question",
         "name": "Que doit contenir la lettre de motivation pour un fellowship ?",
         "acceptedAnswer": { "@type": "Answer", "text": "Une déclaration personnelle pour un fellowship doit répondre clairement à trois questions : Pourquoi ce programme spécifiquement ? Quelle contribution apporterez-vous ? Qu'espérez-vous en retirer et comment cela s'inscrit-il dans votre prochain projet ? Évitez les déclarations d'ambition génériques. Soyez précis : faites référence au travail de l'organisation, nommez un projet qui vous intéresse et décrivez un résultat concret que vous visez. Les sélectionneurs lisent des centaines de lettres — l'honnêteté et la précision l'emportent toujours sur le poli et le générique." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle est la durée d'un programme de fellowship ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La durée varie selon les programmes. Les fellowships à court terme durent 4 à 12 semaines. La majorité des fellowships structurés durent entre 3 et 6 mois. Les fellowships académiques et de politique publique peuvent durer 9 à 12 mois ou plus. En évaluant un programme, vérifiez si la durée est suffisante pour construire une référence significative et un livrable que vous pouvez décrire en détail." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle est la différence entre un fellowship et une bourse ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Une bourse finance des études — elle couvre les frais de scolarité ou de subsistance sans obligation de travail. Un fellowship est un placement structuré impliquant un travail réel dans une organisation réelle. La distinction clé : un fellowship produit une crédentielle professionnelle (lettre de référence, livrable documenté) ; une bourse produit une qualification académique." }
       }
     ]
   }
@@ -212,6 +222,15 @@
     .related-card h3 { font-size: 15px; font-weight: 700; letter-spacing: -0.3px; line-height: 1.35; color: var(--ink); }
     .related-card p { font-size: 13px; color: var(--sub); line-height: 1.6; flex: 1; }
     .related-read { font-size: 12px; font-weight: 600; color: var(--mag); }
+    .compare-table-wrap { overflow-x: auto; margin: 32px 0; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); }
+    .compare-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .compare-table th { background: var(--ink); color: #f5f5f7; padding: 14px 16px; text-align: left; font-size: 13px; font-weight: 600; }
+    .compare-table th:first-child { border-radius: 11px 0 0 0; }
+    .compare-table th:last-child { border-radius: 0 11px 0 0; }
+    .compare-table td { padding: 12px 16px; border-bottom: 1px solid rgba(0,0,0,0.06); vertical-align: top; color: #3a3a3c; line-height: 1.5; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tbody tr:nth-child(even) td { background: var(--light-bg); }
+    .compare-table td:first-child { font-weight: 600; color: var(--ink); white-space: nowrap; }
     @media (max-width: 640px) {
       .nav-links { display: none; }
       .hamburger { display: flex; }
@@ -282,11 +301,27 @@
 
     <p>Ces trois termes se chevauchent considérablement et sont souvent utilisés de façon interchangeable, mais ils ont des origines distinctes et des caractéristiques typiques différentes.</p>
 
-    <p><strong>Un stage</strong> est généralement une mission à court terme (8–12 semaines) au sein d'une équipe spécifique d'une entreprise. L'accent est mis sur les résultats pour l'organisation : vous effectuez un vrai travail dans un vrai rôle, généralement sous supervision étroite. Les stages sont courants dans les environnements d'entreprise et servent souvent de voie directe vers l'embauche à temps plein des jeunes diplômés.</p>
+    <p><strong>Un stage</strong> est généralement une mission à court terme (8–12 semaines) au sein d'une équipe spécifique d'une entreprise. L'accent est mis sur les résultats pour l'organisation : vous effectuez un vrai travail dans un vrai rôle, généralement sous supervision étroite. Les stages sont courants dans les environnements d'entreprise et servent souvent de voie directe vers l'embauche à temps plein des jeunes diplômés. Pour une présentation complète de ce qu'est un stage et comment en obtenir un, consultez <a href="what-is-an-internship-and-how-to-get-one.html">Qu'est-ce qu'un stage et comment en obtenir un</a>.</p>
 
     <p><strong>Un programme pour diplômés</strong> est généralement un programme plus long, souvent par rotation, pour les jeunes diplômés — d'une durée typique de 12 à 24 mois. Ces programmes sont gérés par de grands employeurs et sont très sélectifs.</p>
 
     <p><strong>Un fellowship</strong> se situe quelque part entre les deux, avec un accent plus fort sur le développement personnel qu'un stage standard, et généralement une structure de mentorat plus explicite. Les fellowships sont courants dans les ONG, les fondations, les startups, les programmes gouvernementaux et les organisations internationales. Ils tendent à être plus flexibles concernant l'expérience préalable.</p>
+
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th></th><th>Stage</th><th>Fellowship</th><th>Programme Diplômé</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Durée</td><td>6–12 semaines</td><td>3–12 mois</td><td>12–24 mois</td></tr>
+          <tr><td>Priorité principale</td><td>Résultats pour l'organisation</td><td>Développement du fellow</td><td>Adéquation organisationnelle</td></tr>
+          <tr><td>Hôtes types</td><td>Grandes entreprises</td><td>ONG, fondations, startups, organisations internationales</td><td>Grandes entreprises</td></tr>
+          <tr><td>Mentorat</td><td>Variable (souvent informel)</td><td>Mentor désigné + points structurés</td><td>Responsable direct + RH</td></tr>
+          <tr><td>Expérience préalable</td><td>Souvent requise</td><td>Souvent aucune requise</td><td>Diplôme requis</td></tr>
+          <tr><td>Résultat clé</td><td>Travail réalisé</td><td>Crédentielle + lettre de référence</td><td>Voie vers poste à temps plein</td></tr>
+        </tbody>
+      </table>
+    </div>
 
     <h2 id="types">Types de Programmes de Fellowship</h2>
 
@@ -487,6 +522,22 @@
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-a"><div class="faq-a-inner">Une déclaration personnelle doit répondre à trois questions : Pourquoi ce programme spécifiquement ? Quelle contribution apporterez-vous ? Qu'espérez-vous en retirer ? Soyez précis : faites référence au travail de l'organisation, nommez un projet qui vous intéresse. L'honnêteté et la précision l'emportent toujours sur le poli et le générique.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">Quelle est la durée d'un programme de fellowship ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">La durée varie selon les programmes. Les fellowships à court terme durent 4 à 12 semaines. La majorité des fellowships structurés durent entre 3 et 6 mois. Les fellowships académiques et de politique publique peuvent durer 9 à 12 mois ou plus. Vérifiez si la durée est suffisante pour construire une référence significative et un livrable que vous pouvez décrire en détail.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">Quelle est la différence entre un fellowship et une bourse ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Une bourse finance des études — elle couvre les frais de scolarité ou de subsistance sans obligation de travail. Un fellowship est un placement structuré impliquant un travail réel dans une organisation réelle. La distinction clé : un fellowship produit une crédentielle professionnelle (lettre de référence, livrable documenté) ; une bourse produit une qualification académique.</div></div>
       </div>
     </div>
 

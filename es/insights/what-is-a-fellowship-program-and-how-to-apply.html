@@ -97,6 +97,16 @@
         "@type": "Question",
         "name": "¿Qué debo incluir en la declaración personal de un fellowship?",
         "acceptedAnswer": { "@type": "Answer", "text": "Una declaración personal de fellowship debe responder claramente tres preguntas: ¿Por qué este programa específicamente? ¿Qué aportarás durante el fellowship? ¿Qué esperas ganar y cómo se conecta con tu próximo paso? Evita declaraciones de ambición genérica. Sé específico: referencia el trabajo de la organización, nombra un proyecto o desafío que conecte con tus intereses y describe un resultado concreto en el que estés trabajando. Los seleccionadores leen cientos de declaraciones — lo específico y honesto supera siempre a lo pulido y genérico." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto dura un programa fellowship?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La duración varía ampliamente. Los fellowships a corto plazo duran entre 4 y 12 semanas, similar a las prácticas. La mayoría de los fellowships estructurados duran entre 3 y 6 meses. Los fellowships académicos y de políticas (como Chevening o Fulbright) pueden durar entre 9 y 12 meses o más. Al evaluar programas, comprueba si la duración es suficiente para generar una referencia significativa y un entregable que puedas describir con detalle." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es la diferencia entre un fellowship y una beca?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Una beca es financiación para la educación — cubre matrículas o gastos de vida sin obligación de trabajar para el patrocinador. Un fellowship es una colocación estructurada que implica realizar trabajo real en una organización real. Algunos programas prestigiosos combinan ambas: financiación para estudiar en una universidad junto con una posición de fellowship en un organismo gubernamental. La distinción clave es que un fellowship produce una credencial profesional (carta de referencia, entregable, experiencia documentada); una beca produce una cualificación académica." }
       }
     ]
   }
@@ -212,6 +222,15 @@
     .related-card h3 { font-size: 15px; font-weight: 700; letter-spacing: -0.3px; line-height: 1.35; color: var(--ink); }
     .related-card p { font-size: 13px; color: var(--sub); line-height: 1.6; flex: 1; }
     .related-read { font-size: 12px; font-weight: 600; color: var(--mag); }
+    .compare-table-wrap { overflow-x: auto; margin: 32px 0; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); }
+    .compare-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .compare-table th { background: var(--ink); color: #f5f5f7; padding: 14px 16px; text-align: left; font-size: 13px; font-weight: 600; }
+    .compare-table th:first-child { border-radius: 11px 0 0 0; }
+    .compare-table th:last-child { border-radius: 0 11px 0 0; }
+    .compare-table td { padding: 12px 16px; border-bottom: 1px solid rgba(0,0,0,0.06); vertical-align: top; color: #3a3a3c; line-height: 1.5; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tbody tr:nth-child(even) td { background: var(--light-bg); }
+    .compare-table td:first-child { font-weight: 600; color: var(--ink); white-space: nowrap; }
     @media (max-width: 640px) {
       .nav-links { display: none; }
       .hamburger { display: flex; }
@@ -286,7 +305,58 @@
 
     <p><strong>Un programa de graduados</strong> es generalmente un programa más largo, a menudo rotacional, para recién graduados, con una duración típica de 12–24 meses. Son gestionados por grandes empleadores y son muy competitivos.</p>
 
-    <p><strong>Un fellowship</strong> se sitúa en algún punto intermedio, con un mayor énfasis en el desarrollo personal que las prácticas estándar, y normalmente con una estructura de mentoría más explícita. Los fellowships son comunes en organizaciones sin ánimo de lucro, fundaciones, startups, programas gubernamentales y organizaciones internacionales. Tienden a ser más flexibles respecto a la experiencia previa que las prácticas o los programas de graduados.</p>
+    <p><strong>Un fellowship</strong> se sitúa en algún punto intermedio, con un mayor énfasis en el desarrollo personal que las prácticas estándar, y normalmente con una estructura de mentoría más explícita. Los fellowships son comunes en organizaciones sin ánimo de lucro, fundaciones, startups, programas gubernamentales y organizaciones internacionales. Tienden a ser más flexibles respecto a la experiencia previa que las prácticas o los programas de graduados. Para más información sobre las prácticas, consulta <a href="what-is-an-internship-and-how-to-get-one.html">¿Qué es una práctica y cómo conseguir una?</a></p>
+
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Prácticas</th>
+            <th>Fellowship</th>
+            <th>Programa de Graduados</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Duración</td>
+            <td>6–12 semanas</td>
+            <td>3–12 meses</td>
+            <td>12–24 meses</td>
+          </tr>
+          <tr>
+            <td>Enfoque principal</td>
+            <td>Resultado para la organización</td>
+            <td>Desarrollo del fellow</td>
+            <td>Adaptación organizacional</td>
+          </tr>
+          <tr>
+            <td>Hosts habituales</td>
+            <td>Empresas</td>
+            <td>ONG, fundaciones, startups, orgs internacionales</td>
+            <td>Grandes corporaciones</td>
+          </tr>
+          <tr>
+            <td>Estructura de mentoría</td>
+            <td>Variable (a menudo informal)</td>
+            <td>Mentor asignado + reuniones estructuradas</td>
+            <td>Manager + programa de RRHH</td>
+          </tr>
+          <tr>
+            <td>Experiencia previa</td>
+            <td>A menudo se requiere algo</td>
+            <td>Generalmente no se requiere</td>
+            <td>Titulación obligatoria</td>
+          </tr>
+          <tr>
+            <td>Resultado clave</td>
+            <td>Trabajo completado</td>
+            <td>Credencial + carta de referencia</td>
+            <td>Vía a contrato indefinido</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <h2 id="types">Tipos de Programas de Fellowship</h2>
 
@@ -487,6 +557,22 @@
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-a"><div class="faq-a-inner">Una declaración personal de fellowship debe responder claramente tres preguntas: ¿Por qué este programa específicamente? ¿Qué aportarás durante el fellowship? ¿Qué esperas ganar y cómo se conecta con tu próximo paso? Evita declaraciones genéricas. Sé específico: referencia el trabajo de la organización, nombra un proyecto que conecte con tus intereses y describe un resultado concreto en el que estés trabajando.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">¿Cuánto dura un programa fellowship?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">La duración varía ampliamente. Los fellowships a corto plazo duran entre 4 y 12 semanas. La mayoría de los fellowships estructurados duran entre 3 y 6 meses. Los fellowships académicos y de políticas pueden durar entre 9 y 12 meses o más. Al evaluar programas, comprueba si la duración es suficiente para generar una referencia significativa y un entregable que puedas describir en detalle.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">¿Cuál es la diferencia entre un fellowship y una beca?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Una beca financia la educación — cubre matrículas o gastos de vida sin obligación de trabajar. Un fellowship es una colocación estructurada que implica realizar trabajo real en una organización real. La distinción clave: un fellowship produce una credencial profesional (carta de referencia, entregable documentado); una beca produce una cualificación académica.</div></div>
       </div>
     </div>
 

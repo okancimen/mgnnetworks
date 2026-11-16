@@ -97,6 +97,16 @@
         "@type": "Question",
         "name": "Fellowship申请信应该写什么？",
         "acceptedAnswer": { "@type": "Answer", "text": "申请信需要清晰回答三个问题：为什么选择这个项目？你在Fellowship期间能贡献什么？你希望获得什么，这与你的下一步计划有何关联？避免泛泛而谈，要具体：提及该组织的具体工作，点出你感兴趣的具体项目，描述你期望实现的具体成果。评选委员会阅读大量申请信——真实具体的内容永远胜过精心雕琢却空洞无物的文字。" }
+      },
+      {
+        "@type": "Question",
+        "name": "Fellowship项目通常持续多久？",
+        "acceptedAnswer": { "@type": "Answer", "text": "时长差别很大。短期Fellowship持续4至12周。大多数结构化Fellowship持续3至6个月。学术和政策类Fellowship可持续9至12个月或更长。评估项目时，检查时长是否足够让你建立一份有实质意义的推荐信和可详细描述的交付成果。" }
+      },
+      {
+        "@type": "Question",
+        "name": "Fellowship和奖学金有什么区别？",
+        "acceptedAnswer": { "@type": "Answer", "text": "奖学金资助学业——覆盖学费或生活费，无需承担工作义务。Fellowship是一种结构化安置，要求你在真实组织中完成真实工作。关键区别：Fellowship产生职业记录（推荐信、有据可查的成果）；奖学金产生学术资格认定。" }
       }
     ]
   }
@@ -212,6 +222,15 @@
     .related-card h3 { font-size: 15px; font-weight: 700; letter-spacing: -0.2px; line-height: 1.4; color: var(--ink); }
     .related-card p { font-size: 13px; color: var(--sub); line-height: 1.6; flex: 1; }
     .related-read { font-size: 12px; font-weight: 600; color: var(--mag); }
+    .compare-table-wrap { overflow-x: auto; margin: 32px 0; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); }
+    .compare-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .compare-table th { background: var(--ink); color: #f5f5f7; padding: 14px 16px; text-align: left; font-size: 13px; font-weight: 600; }
+    .compare-table th:first-child { border-radius: 11px 0 0 0; }
+    .compare-table th:last-child { border-radius: 0 11px 0 0; }
+    .compare-table td { padding: 12px 16px; border-bottom: 1px solid rgba(0,0,0,0.06); vertical-align: top; color: #3a3a3c; line-height: 1.5; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tbody tr:nth-child(even) td { background: var(--light-bg); }
+    .compare-table td:first-child { font-weight: 600; color: var(--ink); white-space: nowrap; }
     @media (max-width: 640px) {
       .nav-links { display: none; }
       .hamburger { display: flex; }
@@ -282,11 +301,27 @@
 
     <p>这三个概念高度重叠，经常被互换使用，但有不同的起源和典型特征。</p>
 
-    <p><strong>实习</strong>通常是8至12周在特定团队的短期安置，重点在于为组织产出成果：你在实际岗位上做真实工作，通常有密切监督。实习在企业环境中很普遍，常常直接通往应届生正式录用。</p>
+    <p><strong>实习</strong>通常是8至12周在特定团队的短期安置，重点在于为组织产出成果：你在实际岗位上做真实工作，通常有密切监督。实习在企业环境中很普遍，常常直接通往应届生正式录用。如需了解实习运作方式的详细介绍，请参阅<a href="what-is-an-internship-and-how-to-get-one.html">什么是实习及如何获得实习机会</a>。</p>
 
     <p><strong>应届生项目</strong>是针对应届毕业生的更长期轮岗项目，通常12至24个月，由大型雇主提供，竞争激烈。</p>
 
     <p><strong>Fellowship</strong>介于两者之间，比普通实习更强调个人发展，通常有更明确的导师结构。Fellowship在非政府组织、基金会、初创企业、政府项目和国际组织中更为普遍。入门门槛通常较低，许多项目专为那些正在建立第一份职业记录的人设计。</p>
+
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th></th><th>实习</th><th>Fellowship</th><th>应届生项目</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>时长</td><td>6–12周</td><td>3–12个月</td><td>12–24个月</td></tr>
+          <tr><td>主要重点</td><td>为组织产出成果</td><td>参与者的发展</td><td>组织文化匹配</td></tr>
+          <tr><td>典型机构</td><td>企业</td><td>非政府组织、基金会、初创企业、国际组织</td><td>大型企业</td></tr>
+          <tr><td>导师结构</td><td>因项目而异（通常较非正式）</td><td>专属导师 + 定期结构化会议</td><td>直线经理 + 人力资源项目</td></tr>
+          <tr><td>经验要求</td><td>通常需要一定经验</td><td>通常无要求</td><td>须有学位</td></tr>
+          <tr><td>核心产出</td><td>完成的工作</td><td>资历证明 + 推荐信</td><td>转正职工作路径</td></tr>
+        </tbody>
+      </table>
+    </div>
 
     <h2 id="types">学者项目的类型</h2>
 
@@ -487,6 +522,22 @@
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-a"><div class="faq-a-inner">申请信需要清晰回答三个问题：为什么选择这个项目？你能贡献什么？你希望获得什么？要具体——提及该组织的具体工作，点出你感兴趣的具体项目。真实具体的内容永远胜过精心雕琢却空洞无物的文字。</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">Fellowship项目通常持续多久？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">时长差别很大。短期Fellowship持续4至12周。大多数结构化Fellowship持续3至6个月。学术和政策类Fellowship可持续9至12个月或更长。评估项目时，检查时长是否足够让你建立一份有实质意义的推荐信和可详细描述的交付成果。</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">Fellowship和奖学金有什么区别？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">奖学金资助学业——覆盖学费或生活费，无需承担工作义务。Fellowship是一种结构化安置，要求你在真实组织中完成真实工作。关键区别：Fellowship产生职业记录（推荐信、有据可查的成果）；奖学金产生学术资格认定。</div></div>
       </div>
     </div>
 
