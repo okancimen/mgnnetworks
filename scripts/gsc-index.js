@@ -11,30 +11,42 @@
 //   4. cd scripts && npm install
 //
 // Usage:
-//   node gsc-index.js              # submit all 71 URLs
+//   node gsc-index.js              # submit all URLs not yet in submitted.txt
 //   node gsc-index.js --locale=ru  # submit only Russian pages
 //   node gsc-index.js --dry-run    # list URLs without submitting
+//   node gsc-index.js --all        # ignore submitted.txt, submit everything
 //
 // Quota: default 200 req/day. Increase at console.cloud.google.com if needed.
+// submitted.txt tracks successfully submitted URLs — they are skipped on next run.
 
 const { GoogleAuth } = require('google-auth-library');
 const fs = require('fs');
 const path = require('path');
 
-const SITEMAP  = path.resolve(__dirname, '../sitemap.xml');
-const API      = 'https://indexing.googleapis.com/v3/urlNotifications:publish';
-const DELAY_MS = 1000; // 1 req/s — stay well inside quota
+const SITEMAP       = path.resolve(__dirname, '../sitemap.xml');
+const SUBMITTED_TXT = path.resolve(__dirname, 'submitted.txt');
+const API           = 'https://indexing.googleapis.com/v3/urlNotifications:publish';
+const DELAY_MS      = 1000; // 1 req/s — stay well inside quota
 
 async function main() {
-  const dryRun = process.argv.includes('--dry-run');
+  const dryRun    = process.argv.includes('--dry-run');
+  const submitAll = process.argv.includes('--all');
   const localeArg = process.argv.find(a => a.startsWith('--locale='));
-  const locale = localeArg ? localeArg.split('=')[1] : null;
+  const locale    = localeArg ? localeArg.split('=')[1] : null;
+
+  const submitted = new Set(
+    !submitAll && fs.existsSync(SUBMITTED_TXT)
+      ? fs.readFileSync(SUBMITTED_TXT, 'utf8').split('\n').map(l => l.trim()).filter(Boolean)
+      : []
+  );
 
   const xml = fs.readFileSync(SITEMAP, 'utf8');
   const all = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1].trim());
-  const urls = locale ? all.filter(u => u.includes(`/${locale}/`)) : all;
+  const filtered = locale ? all.filter(u => u.includes(`/${locale}/`)) : all;
+  const urls = filtered.filter(u => !submitted.has(u));
 
-  console.log(`${urls.length} URL(s) to submit${locale ? ` [locale: ${locale}]` : ''}`);
+  const skipped = filtered.length - urls.length;
+  console.log(`${urls.length} URL(s) to submit${locale ? ` [locale: ${locale}]` : ''}${skipped ? ` (${skipped} skipped — already in submitted.txt)` : ''}`);
 
   if (dryRun) {
     urls.forEach(u => console.log(' ', u));
@@ -67,6 +79,7 @@ async function main() {
         data: { url, type: 'URL_UPDATED' },
       });
       console.log(`✓  ${url}`);
+      fs.appendFileSync(SUBMITTED_TXT, url + '\n');
       ok++;
     } catch (err) {
       const msg = err.response?.data?.error?.message || err.message;
