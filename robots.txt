@@ -44,3 +44,5 @@ Sitemap: https://mgnnetworks.com/sitemap.xml
 
 # LLM context files
 LLM-Context: https://mgnnetworks.com/llms.txt
+LLM-Context: https://mgnnetworks.com/llms-full.txt
+LLM-Context: https://mgnnetworks.com/llms-full-tr.txt

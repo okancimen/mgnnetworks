@@ -44,6 +44,11 @@
 
 Global Career Fellowship, 14–22 yaş arası öğrenciler için tasarlanmış yapılandırılmış bir çalışma deneyimi programıdır. Katılımcılar gerçek projeler üzerinde çalışır, kıdemli profesyonellerden mentorluk alır ve programın sonunda doğrulanabilir bir referans mektubu kazanır. Program tamamen uzaktan yürütülür.
 
+## Tam İçerik
+
+Tüm 19 Türkçe makalenin tam metni, SSS cevapları ve temel veriler için:
+- [llms-full-tr.txt](https://mgnnetworks.com/llms-full-tr.txt)
+
 ## İletişim
 
 - Genel sorular: https://mgnnetworks.com/tr/
